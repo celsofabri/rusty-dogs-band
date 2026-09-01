@@ -1,0 +1,38 @@
+// ---------------------------------------------------------------------------
+// The Rusty Dogs / Os Caes Enferrujados
+// Arquitetura SCSS 7-1 simplificada:
+//   utils/      -> tokens (cores, espacos, breakpoints) e mixins
+//   base/       -> reset, tipografia, acessibilidade e animacoes
+//   layout/     -> estruturas que se repetem em todas as paginas
+//   components/ -> pecas reutilizaveis (botao, card, modal, timeline...)
+//   pages/      -> ajustes especificos de cada pagina
+// ---------------------------------------------------------------------------
+
+// Base
+@use "base/reset";
+@use "base/typography";
+@use "base/a11y";
+@use "base/animations";
+
+// Layout
+@use "layout/container";
+@use "layout/section";
+@use "layout/header";
+@use "layout/footer";
+
+// Componentes
+@use "components/button";
+@use "components/hero";
+@use "components/card";
+@use "components/timeline";
+@use "components/video";
+@use "components/modal";
+@use "components/social";
+@use "components/form";
+
+// Paginas
+@use "pages/home";
+@use "pages/about";
+@use "pages/videos";
+@use "pages/contact";
+@use "pages/not-found";

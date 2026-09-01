@@ -1,0 +1,146 @@
+// Hero de tela cheia da home.
+@use "../utils" as *;
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 100svh;
+  padding-top: calc(#{$header-height} + #{$space-6});
+  padding-bottom: $space-8;
+  overflow: hidden;
+
+  @include mq("md") {
+    align-items: center;
+    padding-bottom: $space-9;
+  }
+}
+
+.hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+
+  img {
+    object-position: center 30%;
+  }
+}
+
+.hero__scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(70% 55% at 50% 62%, rgba(10, 13, 18, 0.72) 0%, transparent 70%),
+    $gradient-scrim;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// O kicker fica sobre a parte mais clara da foto, entao ganha um fundo proprio
+// para garantir contraste em qualquer recorte da imagem.
+.hero__kicker {
+  @include kicker;
+  display: inline-block;
+  margin: 0 0 $space-5;
+  padding: $space-2 $space-4;
+  border: 1px solid rgba(245, 166, 35, 0.35);
+  border-radius: 999px;
+  background: rgba(10, 13, 18, 0.72);
+  backdrop-filter: blur(8px);
+  color: $color-ember;
+  font-size: 0.75rem;
+  animation: rise-in 800ms $ease-out both;
+}
+
+.hero__title {
+  margin: 0 0 $space-5;
+  width: 100%;
+  animation: rise-in 900ms 80ms $ease-out both;
+}
+
+.hero__logo {
+  width: min(90vw, 620px);
+  margin-inline: auto;
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.65));
+}
+
+.hero__tagline {
+  max-width: 46ch;
+  margin: 0 auto $space-6;
+  font-size: clamp(1.0625rem, 2vw, 1.375rem);
+  color: $color-bone;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.8);
+  animation: rise-in 900ms 160ms $ease-out both;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-4;
+  animation: rise-in 900ms 240ms $ease-out both;
+}
+
+.hero__release {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-2 $space-3;
+  margin: $space-6 0 0;
+  padding: $space-2 $space-4;
+  border: $border-subtle;
+  border-radius: 999px;
+  background: rgba(10, 13, 18, 0.55);
+  backdrop-filter: blur(6px);
+  font-size: 0.8125rem;
+  animation: rise-in 900ms 320ms $ease-out both;
+}
+
+.hero__release-label {
+  @include kicker;
+  font-size: 0.6875rem;
+}
+
+.hero__release-value {
+  color: $color-muted;
+}
+
+.hero__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: $space-4;
+  transform: translateX(-50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-3;
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $color-dim;
+
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 44px;
+  background: linear-gradient(180deg, $color-rust, transparent);
+  animation: pulse-line 2.4s ease-in-out infinite;
+  transform-origin: top;
+}

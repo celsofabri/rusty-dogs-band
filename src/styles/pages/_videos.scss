@@ -1,0 +1,8 @@
+// Pagina de videos.
+@use "../utils" as *;
+
+.page--videos {
+  .section--video-list {
+    padding-top: $space-7;
+  }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "tempestade-seca",
+    "youtubeId": "fJ9rUzIMcZQ",
+    "thumbnail": "video-4.jpg",
+    "category": "clipes",
+    "year": 2023,
+    "duration": "4:12",
+    "title": { "pt": "Tempestade Seca", "en": "Tempestade Seca" },
+    "description": {
+      "pt": "Clipe oficial da faixa-título do álbum de 2023, gravado em um galpão abandonado na zona norte.",
+      "en": "Official video for the title track of the 2023 album, shot in an abandoned warehouse on the north side of town."
+    }
+  },
+  {
+    "id": "cachorro-solto",
+    "youtubeId": "1w7OgIMMRc4",
+    "thumbnail": "video-2.jpg",
+    "category": "clipes",
+    "year": 2021,
+    "duration": "3:38",
+    "title": { "pt": "Cachorro Solto", "en": "Loose Dog" },
+    "description": {
+      "pt": "A música que apresentou a banda ao público, reeditada em 2021 com um clipe novo em plano-sequência.",
+      "en": "The song that introduced the band, reissued in 2021 with a new single-take video."
+    }
+  },
+  {
+    "id": "ao-vivo-na-garagem",
+    "youtubeId": "kXYiU_JCYtU",
+    "thumbnail": "video-1.jpg",
+    "category": "ao-vivo",
+    "year": 2021,
+    "duration": "42:07",
+    "title": { "pt": "Ao Vivo na Garagem (sessão completa)", "en": "Live in the Garage (full session)" },
+    "description": {
+      "pt": "Oito músicas em versão acústica, gravadas no mesmo lugar onde a banda começou.",
+      "en": "Eight acoustic songs recorded in the same place where the band started."
+    }
+  },
+  {
+    "id": "porto-alegre-2025",
+    "youtubeId": "hTWKbfoikeg",
+    "thumbnail": "video-6.jpg",
+    "category": "ao-vivo",
+    "year": 2025,
+    "duration": "8:54",
+    "title": { "pt": "Encerramento da turnê — Porto Alegre", "en": "Tour closing night — Porto Alegre" },
+    "description": {
+      "pt": "Os últimos vinte minutos do show de encerramento, com a plateia cantando do começo ao fim.",
+      "en": "The last twenty minutes of the closing show, with the crowd singing from start to finish."
+    }
+  },
+  {
+    "id": "estudio-tempestade",
+    "youtubeId": "eVTXPUF4Oz4",
+    "thumbnail": "video-3.jpg",
+    "category": "bastidores",
+    "year": 2023,
+    "duration": "11:20",
+    "title": { "pt": "15 dias para gravar um disco", "en": "Fifteen days to record an album" },
+    "description": {
+      "pt": "Documentário curto sobre a gravação de “Tempestade Seca”, do primeiro take à mixagem final.",
+      "en": "Short documentary on the making of “Tempestade Seca”, from first take to final mix."
+    }
+  },
+  {
+    "id": "estrada-europa",
+    "youtubeId": "dQw4w9WgXcQ",
+    "thumbnail": "video-5.jpg",
+    "category": "bastidores",
+    "year": 2025,
+    "duration": "6:45",
+    "title": { "pt": "Diário de estrada — Europa", "en": "Road diary — Europe" },
+    "description": {
+      "pt": "Doze datas, três países e uma van alugada: os bastidores da primeira temporada europeia.",
+      "en": "Twelve dates, three countries and a rented van: behind the scenes of the first European run."
+    }
+  }
+]

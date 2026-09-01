@@ -1,0 +1,171 @@
+// Grade de videos + player em lightbox.
+@use "../utils" as *;
+
+.video-grid__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  margin-bottom: $space-6;
+}
+
+.video-grid__list {
+  display: grid;
+  gap: $space-5;
+
+  @include mq("sm") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq("lg") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.video-grid__empty {
+  padding: $space-7;
+  text-align: center;
+  color: $color-muted;
+  border: 1px dashed rgba(237, 228, 211, 0.16);
+  border-radius: $radius-md;
+}
+
+.video-card {
+  height: 100%;
+}
+
+.video-card__button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  @include card-surface;
+  overflow: hidden;
+  transition: transform $transition-base, border-color $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(232, 98, 31, 0.5);
+    box-shadow: $shadow-lift;
+  }
+
+  .section--dark & {
+    background: $color-surface-alt;
+  }
+}
+
+.video-card__media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 13, 18, 0.35);
+    transition: background $transition-base;
+  }
+
+  .video-card__button:hover &::after {
+    background: rgba(10, 13, 18, 0.12);
+  }
+}
+
+.video-card__image {
+  transition: transform 700ms $ease-out;
+
+  .video-card__button:hover & {
+    transform: scale(1.06);
+  }
+}
+
+.video-card__play {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: $gradient-rust;
+  color: #14100c;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  transition: transform $transition-base;
+
+  svg {
+    margin-left: 3px;
+  }
+
+  .video-card__button:hover & {
+    transform: translate(-50%, -50%) scale(1.12);
+  }
+}
+
+.video-card__duration {
+  position: absolute;
+  z-index: 1;
+  right: $space-3;
+  bottom: $space-3;
+  padding: 2px $space-2;
+  border-radius: $radius-sm;
+  background: rgba(10, 13, 18, 0.85);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  color: $color-bone;
+}
+
+.video-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+  padding: $space-5;
+  flex: 1;
+}
+
+.video-card__category {
+  @include kicker;
+  font-size: 0.6875rem;
+}
+
+.video-card__title {
+  @include display-font(500);
+  font-size: 1.25rem;
+  color: $color-bone;
+  line-height: 1.15;
+}
+
+.video-card__description {
+  color: $color-muted;
+  font-size: 0.9375rem;
+  @include line-clamp(3);
+}
+
+.video-card__meta {
+  margin-top: auto;
+  padding-top: $space-3;
+  border-top: $border-subtle;
+  font-size: 0.8125rem;
+  color: $color-dim;
+}
+
+// Player dentro do modal.
+.video-player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: $radius-sm;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}

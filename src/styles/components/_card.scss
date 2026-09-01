@@ -1,0 +1,202 @@
+// Cards diversos: integrantes, lancamento e blocos de informacao.
+@use "../utils" as *;
+
+// Integrantes ---------------------------------------------------------------
+.members {
+  display: grid;
+  gap: $space-5;
+  margin-top: $space-7;
+  text-align: left;
+
+  @include mq("sm") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq("lg") {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.member-card {
+  @include card-surface;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform $transition-base, border-color $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(232, 98, 31, 0.45);
+    box-shadow: $shadow-lift;
+  }
+}
+
+.member-card__media {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 45%, rgba(18, 22, 29, 0.9) 100%);
+  }
+}
+
+.member-card__image {
+  transition: transform 600ms $ease-out, filter $transition-base;
+  filter: saturate(0.85) contrast(1.05);
+
+  .member-card:hover & {
+    transform: scale(1.05);
+    filter: saturate(1) contrast(1.05);
+  }
+}
+
+.member-card__body {
+  padding: $space-5;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.member-card__name {
+  font-size: 1.375rem;
+  margin-bottom: $space-1;
+}
+
+.member-card__role {
+  @include kicker;
+  font-size: 0.75rem;
+  margin: 0 0 $space-4;
+}
+
+.member-card__bio {
+  color: $color-muted;
+  font-size: 0.9375rem;
+  margin-bottom: $space-4;
+  flex: 1;
+}
+
+.member-card__since {
+  margin: 0;
+  padding-top: $space-3;
+  border-top: $border-subtle;
+  font-size: 0.8125rem;
+  color: $color-dim;
+}
+
+// Lancamento em destaque ----------------------------------------------------
+.release-card {
+  @include card-surface;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-5;
+  padding: $space-5 $space-6;
+  margin-bottom: $space-6;
+  background: linear-gradient(120deg, rgba(232, 98, 31, 0.14), rgba(18, 22, 29, 0.9) 60%);
+}
+
+.release-card__label {
+  @include kicker;
+  font-size: 0.6875rem;
+  margin: 0 0 $space-2;
+}
+
+.release-card__title {
+  @include display-font;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  margin: 0;
+}
+
+.release-card__meta {
+  margin: $space-1 0 0;
+  color: $color-muted;
+  font-size: 0.875rem;
+}
+
+// Blocos de informacao (contato) -------------------------------------------
+.info-card {
+  @include card-surface;
+  padding: $space-5;
+
+  & + & {
+    margin-top: $space-5;
+  }
+
+  &--accent {
+    background: linear-gradient(140deg, rgba(232, 98, 31, 0.16), rgba(18, 22, 29, 0.95));
+    border-color: rgba(232, 98, 31, 0.3);
+  }
+}
+
+.info-card__title {
+  @include display-font(500);
+  font-size: 0.875rem;
+  letter-spacing: 0.18em;
+  color: $color-rust;
+  margin-bottom: $space-4;
+}
+
+.info-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.info-card__label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-dim;
+  margin-bottom: 2px;
+}
+
+.info-card__link {
+  color: $color-bone;
+  border-bottom: 1px solid rgba(232, 98, 31, 0.4);
+
+  &:hover {
+    color: $color-ember;
+  }
+}
+
+.info-card__text {
+  color: $color-muted;
+  font-size: 0.9375rem;
+}
+
+// Numeros da banda ----------------------------------------------------------
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-4;
+  margin: $space-6 0;
+
+  @include mq("sm") {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stats__item {
+  padding: $space-4 0;
+  border-top: 2px solid rgba(232, 98, 31, 0.5);
+}
+
+.stats__value {
+  display: block;
+  @include display-font;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  @include gradient-text;
+}
+
+.stats__label {
+  display: block;
+  font-size: 0.8125rem;
+  color: $color-muted;
+  line-height: 1.3;
+}

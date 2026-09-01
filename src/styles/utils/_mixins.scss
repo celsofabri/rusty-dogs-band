@@ -1,0 +1,76 @@
+// ---------------------------------------------------------------------------
+// Mixins utilitarios
+// ---------------------------------------------------------------------------
+@use "sass:map";
+@use "variables" as *;
+
+/// Media query mobile-first: @include mq("md") { ... }
+@mixin mq($breakpoint) {
+  $value: map.get($breakpoints, $breakpoint);
+
+  @if $value == null {
+    @error "Breakpoint `#{$breakpoint}` nao existe em $breakpoints.";
+  }
+
+  @media (min-width: $value) {
+    @content;
+  }
+}
+
+/// Titulo de display da marca.
+@mixin display-font($weight: 700) {
+  font-family: $font-display;
+  font-weight: $weight;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.02;
+}
+
+/// Rotulo pequeno em caixa alta usado nos "kickers" das secoes.
+@mixin kicker {
+  font-family: $font-display;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: $color-rust;
+}
+
+/// Anel de foco visivel e consistente para navegacao por teclado.
+@mixin focus-ring($offset: 3px) {
+  &:focus-visible {
+    outline: 2px solid $color-ember;
+    outline-offset: $offset;
+    border-radius: $radius-sm;
+  }
+}
+
+/// Texto com o gradiente de ferrugem.
+@mixin gradient-text {
+  background: $gradient-rust;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/// Limita o texto a N linhas.
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/// Card padrao do site.
+@mixin card-surface {
+  background: $color-surface;
+  border: $border-subtle;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+}
+
+/// Paragrafo de apoio (subtitulo de secao, linha de abertura).
+@mixin lead {
+  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+  color: $color-muted;
+}

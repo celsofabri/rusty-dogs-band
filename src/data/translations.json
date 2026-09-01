@@ -1,0 +1,270 @@
+{
+  "pt": {
+    "locale": "pt-BR",
+    "localeName": "Português",
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "videos": "Vídeos",
+      "contact": "Contato",
+      "menu": "Menu principal",
+      "openMenu": "Abrir menu",
+      "closeMenu": "Fechar menu",
+      "skipToContent": "Pular para o conteúdo"
+    },
+    "language": {
+      "label": "Idioma",
+      "switchTo": "Ver o site em inglês",
+      "short": "PT"
+    },
+    "home": {
+      "kicker": "Desde 2009, de Porto Alegre para a estrada",
+      "ctaListen": "Ouça agora",
+      "ctaShows": "Próximos shows",
+      "scroll": "Role para descobrir",
+      "aboutKicker": "Quem somos",
+      "aboutTitle": "Rock sujo, refrão grande",
+      "aboutCta": "Conheça a história",
+      "videosKicker": "Assista",
+      "videosTitle": "Vídeos recentes",
+      "videosSubtitle": "Clipes, sessões ao vivo e bastidores direto do nosso canal.",
+      "videosCta": "Ver todos os vídeos",
+      "socialKicker": "Onde ouvir",
+      "socialTitle": "Nas plataformas e nas redes",
+      "socialSubtitle": "Coloque o disco para tocar e venha junto na estrada.",
+      "latestRelease": "Último lançamento",
+      "statsAlbums": "álbuns lançados",
+      "statsShows": "shows na estrada",
+      "statsCities": "cidades visitadas",
+      "statsYears": "anos de banda"
+    },
+    "about": {
+      "title": "Sobre a banda",
+      "subtitle": "Quinze anos entre garagens, vans velhas e palcos que foram ficando maiores.",
+      "storyKicker": "A história",
+      "storyTitle": "Começou com uma placa enferrujada",
+      "story": [
+        "Em 2009, Rafa Moreno e Téo Vasconcelos dividiam o aluguel de uma casa velha na Cidade Baixa, em Porto Alegre. A garagem não cabia carro, mas cabia um amplificador, uma bateria emprestada e a teimosia de dois caras que queriam tocar as músicas que ouviam desde a adolescência.",
+        "O nome apareceu antes das músicas: uma placa enferrujada no ferro-velho da esquina, com o desenho de dois cães quase apagado pelo tempo. Ninguém nunca conseguiu explicar direito por que aquilo fazia sentido — mas fazia.",
+        "De lá para cá foram dois EPs, três álbuns, uma van comprada em financiamento coletivo e mais de trezentos shows. O som mudou de pele algumas vezes: passou pelo rock nacional dos anos 90, pelo peso do classic rock e pelo nervo seco do indie dos anos 2000. O que nunca mudou foi o jeito de gravar — ao vivo, todo mundo na mesma sala, com os erros que couberem."
+      ],
+      "timelineKicker": "Linha do tempo",
+      "timelineTitle": "Os marcos da banda",
+      "timelineSubtitle": "Da primeira ensaiada na garagem à primeira temporada europeia.",
+      "membersKicker": "A formação",
+      "membersTitle": "Quem toca",
+      "membersSubtitle": "Quatro pessoas, quatro discotecas diferentes, uma banda só.",
+      "memberSince": "Na banda desde",
+      "types": {
+        "formation": "Formação",
+        "release": "Lançamento",
+        "show": "Turnê",
+        "award": "Prêmio",
+        "lineup": "Formação"
+      }
+    },
+    "videos": {
+      "title": "Vídeos",
+      "subtitle": "Clipes oficiais, registros ao vivo e o que acontece fora do palco.",
+      "filterLabel": "Filtrar vídeos por categoria",
+      "all": "Todos",
+      "categories": {
+        "clipes": "Clipes",
+        "ao-vivo": "Ao vivo",
+        "bastidores": "Bastidores"
+      },
+      "play": "Assistir",
+      "playAria": "Assistir ao vídeo",
+      "close": "Fechar vídeo",
+      "empty": "Nenhum vídeo nesta categoria por enquanto.",
+      "count": "vídeos"
+    },
+    "contact": {
+      "title": "Contato",
+      "subtitle": "Show, entrevista, parceria ou só um alô: escreva para a gente.",
+      "formTitle": "Mande uma mensagem",
+      "name": "Nome",
+      "namePlaceholder": "Como podemos te chamar?",
+      "subject": "Título / Assunto",
+      "subjectPlaceholder": "Sobre o que você quer falar?",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte os detalhes...",
+      "email": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
+      "required": "obrigatório",
+      "errors": {
+        "name": "Escreva seu nome (mínimo de 2 caracteres).",
+        "email": "Informe um e-mail válido para podermos responder.",
+        "subject": "Escreva um assunto (mínimo de 3 caracteres).",
+        "message": "Escreva sua mensagem (mínimo de 10 caracteres)."
+      },
+      "success": "Mensagem enviada! Respondemos em até três dias úteis.",
+      "successDemo": "Formulário validado com sucesso (modo demonstração — configure GATSBY_FORMSPREE_ID para enviar de verdade).",
+      "error": "Não foi possível enviar agora. Tente de novo ou escreva direto para o nosso e-mail.",
+      "infoTitle": "Outros canais",
+      "general": "Assuntos gerais",
+      "booking": "Shows e contratação",
+      "press": "Imprensa e assessoria",
+      "pressKitTitle": "Imprensa e agências",
+      "pressKitText": "Fotos em alta resolução, release atualizado, rider técnico e mapa de palco estão no nosso press kit.",
+      "pressKitCta": "Falar com a assessoria",
+      "followTitle": "Siga a banda"
+    },
+    "footer": {
+      "navTitle": "Navegação",
+      "contactTitle": "Contato",
+      "followTitle": "Siga",
+      "rights": "Todos os direitos reservados.",
+      "madeWith": "Feito com Gatsby e muita distorção.",
+      "backToTop": "Voltar ao topo"
+    },
+    "notFound": {
+      "title": "Página não encontrada",
+      "text": "Essa página se perdeu na estrada. Que tal voltar para o começo?",
+      "cta": "Ir para a home"
+    },
+    "seo": {
+      "home": "Início",
+      "homeDescription": "Site oficial de Os Cães Enferrujados: rock sujo e melódico de Porto Alegre. Ouça, assista aos vídeos e entre em contato.",
+      "aboutDescription": "A história de Os Cães Enferrujados, a linha do tempo da banda e quem toca em cada instrumento.",
+      "videosDescription": "Clipes oficiais, sessões ao vivo e bastidores de Os Cães Enferrujados.",
+      "contactDescription": "Fale com Os Cães Enferrujados: shows, imprensa, parcerias e contato geral."
+    }
+  },
+  "en": {
+    "locale": "en-US",
+    "localeName": "English",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "videos": "Videos",
+      "contact": "Contact",
+      "menu": "Main menu",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "skipToContent": "Skip to content"
+    },
+    "language": {
+      "label": "Language",
+      "switchTo": "View the site in Portuguese",
+      "short": "EN"
+    },
+    "home": {
+      "kicker": "From Porto Alegre to the road since 2009",
+      "ctaListen": "Listen now",
+      "ctaShows": "Upcoming shows",
+      "scroll": "Scroll to explore",
+      "aboutKicker": "Who we are",
+      "aboutTitle": "Dirty rock, big choruses",
+      "aboutCta": "Read our story",
+      "videosKicker": "Watch",
+      "videosTitle": "Latest videos",
+      "videosSubtitle": "Music videos, live sessions and backstage footage straight from our channel.",
+      "videosCta": "See all videos",
+      "socialKicker": "Where to listen",
+      "socialTitle": "On every platform",
+      "socialSubtitle": "Put the record on and come along for the ride.",
+      "latestRelease": "Latest release",
+      "statsAlbums": "albums released",
+      "statsShows": "shows played",
+      "statsCities": "cities visited",
+      "statsYears": "years together"
+    },
+    "about": {
+      "title": "About the band",
+      "subtitle": "Fifteen years of garages, old vans and stages that slowly got bigger.",
+      "storyKicker": "The story",
+      "storyTitle": "It started with a rusty sign",
+      "story": [
+        "In 2009, Rafa Moreno and Téo Vasconcelos shared the rent of an old house in Cidade Baixa, Porto Alegre. The garage was too small for a car, but big enough for an amplifier, a borrowed drum kit and the stubbornness of two guys who wanted to play the songs they had been hearing since they were teenagers.",
+        "The name came before the songs: a rusty sign in the scrapyard around the corner, with two dogs drawn on it, half erased by time. Nobody has ever been able to explain why it made sense — it just did.",
+        "Since then there have been two EPs, three albums, a crowdfunded van and more than three hundred shows. The sound has changed skin a few times: 90s Brazilian rock, the weight of classic rock, the dry nerve of early-2000s indie. What never changed is how they record — live, everyone in the same room, keeping whatever mistakes fit."
+      ],
+      "timelineKicker": "Timeline",
+      "timelineTitle": "Milestones",
+      "timelineSubtitle": "From the first garage rehearsal to the first European run.",
+      "membersKicker": "The line-up",
+      "membersTitle": "Who plays",
+      "membersSubtitle": "Four people, four very different record collections, one band.",
+      "memberSince": "In the band since",
+      "types": {
+        "formation": "Formation",
+        "release": "Release",
+        "show": "Touring",
+        "award": "Award",
+        "lineup": "Line-up"
+      }
+    },
+    "videos": {
+      "title": "Videos",
+      "subtitle": "Official music videos, live footage and everything that happens off stage.",
+      "filterLabel": "Filter videos by category",
+      "all": "All",
+      "categories": {
+        "clipes": "Music videos",
+        "ao-vivo": "Live",
+        "bastidores": "Backstage"
+      },
+      "play": "Watch",
+      "playAria": "Play video",
+      "close": "Close video",
+      "empty": "No videos in this category yet.",
+      "count": "videos"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "A show, an interview, a partnership or just a hello: write to us.",
+      "formTitle": "Send a message",
+      "name": "Name",
+      "namePlaceholder": "What should we call you?",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is this about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us the details...",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "required": "required",
+      "errors": {
+        "name": "Please enter your name (at least 2 characters).",
+        "email": "Please enter a valid email so we can reply.",
+        "subject": "Please enter a subject (at least 3 characters).",
+        "message": "Please write your message (at least 10 characters)."
+      },
+      "success": "Message sent! We usually reply within three business days.",
+      "successDemo": "Form validated successfully (demo mode — set GATSBY_FORMSPREE_ID to send for real).",
+      "error": "We could not send it right now. Please try again or email us directly.",
+      "infoTitle": "Other channels",
+      "general": "General enquiries",
+      "booking": "Booking",
+      "press": "Press",
+      "pressKitTitle": "Press & agencies",
+      "pressKitText": "High-resolution photos, updated bio, technical rider and stage plot are all in our press kit.",
+      "pressKitCta": "Contact our press team",
+      "followTitle": "Follow the band"
+    },
+    "footer": {
+      "navTitle": "Navigation",
+      "contactTitle": "Contact",
+      "followTitle": "Follow",
+      "rights": "All rights reserved.",
+      "madeWith": "Built with Gatsby and a lot of distortion.",
+      "backToTop": "Back to top"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "text": "This page got lost on the road. How about heading back to the start?",
+      "cta": "Go to homepage"
+    },
+    "seo": {
+      "home": "Home",
+      "homeDescription": "Official website of The Rusty Dogs: gritty, melodic rock from southern Brazil. Listen, watch and get in touch.",
+      "aboutDescription": "The story of The Rusty Dogs, the band timeline and who plays what.",
+      "videosDescription": "Official music videos, live sessions and backstage footage from The Rusty Dogs.",
+      "contactDescription": "Get in touch with The Rusty Dogs: booking, press, partnerships and general enquiries."
+    }
+  }
+}

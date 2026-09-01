@@ -1,0 +1,115 @@
+// Formulario de contato: campos, estados de erro e alertas.
+@use "../utils" as *;
+
+.contact-form {
+  @include card-surface;
+  padding: $space-5;
+
+  @include mq("md") {
+    padding: $space-6;
+  }
+}
+
+.contact-form__title {
+  font-size: clamp(1.375rem, 2.6vw, 1.75rem);
+  margin-bottom: $space-5;
+}
+
+.field {
+  margin-bottom: $space-5;
+
+  &--honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+
+.field__label {
+  display: block;
+  margin-bottom: $space-2;
+  font-family: $font-display;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-bone;
+}
+
+.field__required {
+  color: $color-dim;
+  letter-spacing: 0.06em;
+}
+
+.field__input {
+  width: 100%;
+  padding: $space-3 $space-4;
+  background: $color-elevated;
+  border: 1px solid rgba(237, 228, 211, 0.12);
+  border-radius: $radius-sm;
+  color: $color-bone;
+  transition: border-color $transition-fast, box-shadow $transition-fast;
+
+  &::placeholder {
+    color: $color-dim;
+  }
+
+  &:hover {
+    border-color: rgba(237, 228, 211, 0.24);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-rust;
+    box-shadow: 0 0 0 3px rgba(232, 98, 31, 0.22);
+  }
+
+  &--textarea {
+    resize: vertical;
+    min-height: 150px;
+    line-height: 1.6;
+  }
+}
+
+.field--invalid .field__input {
+  border-color: $color-error;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(255, 122, 107, 0.22);
+  }
+}
+
+.field__error {
+  margin: $space-2 0 0;
+  font-size: 0.8125rem;
+  color: $color-error;
+}
+
+.contact-form__actions {
+  margin-top: $space-6;
+}
+
+.contact-form__status:not(:empty) {
+  margin-top: $space-5;
+}
+
+.alert {
+  margin: 0;
+  padding: $space-4;
+  border-radius: $radius-sm;
+  font-size: 0.9375rem;
+  border: 1px solid transparent;
+
+  &--success {
+    background: rgba(123, 216, 143, 0.1);
+    border-color: rgba(123, 216, 143, 0.35);
+    color: $color-success;
+  }
+
+  &--error {
+    background: rgba(255, 122, 107, 0.1);
+    border-color: rgba(255, 122, 107, 0.35);
+    color: $color-error;
+  }
+}

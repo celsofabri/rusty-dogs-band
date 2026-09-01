@@ -1,0 +1,46 @@
+// ---------------------------------------------------------------------------
+// Acessibilidade: skip link, conteudo so para leitores de tela e foco visivel.
+// ---------------------------------------------------------------------------
+@use "../utils" as *;
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: $space-4;
+  z-index: $z-skip;
+  padding: $space-3 $space-5;
+  background: $color-rust;
+  color: #fff;
+  font-family: $font-display;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 0 0 $radius-sm $radius-sm;
+  transition: top $transition-fast;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+// Foco padrao para qualquer elemento interativo que nao tenha regra propria.
+a,
+button,
+input,
+textarea,
+select,
+[tabindex] {
+  @include focus-ring;
+}

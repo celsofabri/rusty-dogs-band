@@ -1,0 +1,180 @@
+// Cabecalho fixo: transparente sobre o hero e solido apos o scroll.
+@use "../utils" as *;
+
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: $z-header;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  transition: background $transition-base, border-color $transition-base, backdrop-filter $transition-base;
+  border-bottom: 1px solid transparent;
+
+  &.is-scrolled,
+  &.is-open {
+    background: rgba(10, 13, 18, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom-color: rgba(237, 228, 211, 0.09);
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-5;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  @include focus-ring;
+}
+
+.header__logo {
+  width: 132px;
+  transition: transform $transition-base;
+
+  @include mq("md") {
+    width: 160px;
+  }
+
+  .header__brand:hover & {
+    transform: scale(1.04);
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @include mq("lg") {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: $space-6;
+}
+
+.header__link {
+  position: relative;
+  font-family: $font-display;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-muted;
+  padding-block: $space-2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: $gradient-rust;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform $transition-base;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $color-bone;
+  }
+
+  &:hover::after,
+  &.is-active::after {
+    transform: scaleX(1);
+  }
+
+  &.is-active {
+    color: $color-bone;
+  }
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+}
+
+.header__lang {
+  display: none;
+
+  @include mq("sm") {
+    display: flex;
+  }
+}
+
+.header__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: $border-subtle;
+  border-radius: $radius-sm;
+  color: $color-bone;
+  background: rgba(18, 22, 29, 0.6);
+  transition: border-color $transition-fast, color $transition-fast;
+
+  &:hover {
+    border-color: $color-rust;
+    color: $color-rust;
+  }
+
+  @include mq("lg") {
+    display: none;
+  }
+}
+
+// Menu mobile em tela cheia.
+.mobile-menu {
+  position: fixed;
+  inset: $header-height 0 0;
+  z-index: $z-menu;
+  background: rgba(10, 13, 18, 0.98);
+  backdrop-filter: blur(12px);
+  padding: $space-7 0;
+  overflow-y: auto;
+
+  @include mq("lg") {
+    display: none;
+  }
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+  padding-inline: $space-5;
+
+  li {
+    opacity: 0;
+    animation: rise-in 420ms $ease-out forwards;
+  }
+}
+
+.mobile-menu__link {
+  display: block;
+  padding: $space-4 0;
+  border-bottom: $border-subtle;
+  @include display-font(500);
+  font-size: 1.75rem;
+  color: $color-bone;
+
+  &.is-active {
+    color: $color-rust;
+  }
+
+  &:hover {
+    color: $color-ember;
+  }
+}

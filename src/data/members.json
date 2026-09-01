@@ -1,0 +1,46 @@
+[
+  {
+    "id": "rafa-moreno",
+    "name": "Rafa Moreno",
+    "image": "member-2.jpg",
+    "role": { "pt": "Voz e guitarra solo", "en": "Vocals & lead guitar" },
+    "bio": {
+      "pt": "Escreve quase todas as letras da banda em cadernos que nunca sobrevivem a uma turnê inteira. Cresceu ouvindo Engenheiros do Hawaii e Led Zeppelin no mesmo toca-discos, e o resultado disso está em cada refrão.",
+      "en": "Writes almost every lyric in notebooks that never survive a full tour. Grew up playing Engenheiros do Hawaii and Led Zeppelin on the same turntable, and every chorus shows it."
+    },
+    "since": 2009
+  },
+  {
+    "id": "teo-vasconcelos",
+    "name": "Téo Vasconcelos",
+    "image": "member-1.jpg",
+    "role": { "pt": "Guitarra base e violão", "en": "Rhythm guitar & acoustic" },
+    "bio": {
+      "pt": "Responsável pelas camadas limpas que seguram o caos. Toca de ouvido desde os doze anos e coleciona pedais que quase nunca liga — mas quando liga, a música muda de endereço.",
+      "en": "Keeps the clean layers that hold the chaos together. Has played by ear since the age of twelve and collects pedals that rarely get switched on — when they do, the song changes address."
+    },
+    "since": 2009
+  },
+  {
+    "id": "marcao-duarte",
+    "name": "Marcão Duarte",
+    "image": "member-3.jpg",
+    "role": { "pt": "Baixo", "en": "Bass" },
+    "bio": {
+      "pt": "Entrou na banda em 2013 para cobrir dois shows e ficou. Vem do hardcore de porão de Porto Alegre e trouxe para o grupo o peso que faltava nos graves.",
+      "en": "Joined in 2013 to cover two shows and never left. Comes from the Porto Alegre basement hardcore scene and brought the low-end weight the band was missing."
+    },
+    "since": 2013
+  },
+  {
+    "id": "nico-andrade",
+    "name": "Nico Andrade",
+    "image": "member-4.jpg",
+    "role": { "pt": "Bateria", "en": "Drums" },
+    "bio": {
+      "pt": "Bateria seca, sem firula, com uma obsessão declarada por gravações ao vivo. Produz os discos da banda no estúdio caseiro montado na garagem da própria casa.",
+      "en": "Dry, no-frills drumming and an open obsession with live recordings. Produces the band's records in a home studio built in the garage."
+    },
+    "since": 2011
+  }
+]

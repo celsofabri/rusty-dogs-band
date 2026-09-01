@@ -1,0 +1,83 @@
+[
+  {
+    "year": "2009",
+    "type": "formation",
+    "title": { "pt": "A primeira ensaiada na garagem", "en": "First rehearsal in the garage" },
+    "description": {
+      "pt": "Rafa e Téo montam a banda em uma garagem no bairro Cidade Baixa, em Porto Alegre. O nome vem de uma placa enferrujada encontrada no ferro-velho da esquina.",
+      "en": "Rafa and Téo start the band in a garage in Cidade Baixa, Porto Alegre. The name comes from a rusty sign found in the scrapyard around the corner."
+    }
+  },
+  {
+    "year": "2011",
+    "type": "release",
+    "title": { "pt": "EP de estreia: “Latido”", "en": "Debut EP: “Latido”" },
+    "description": {
+      "pt": "Cinco faixas gravadas em dois fins de semana, lançadas de graça na internet. “Cachorro Solto” vira a primeira música da banda a tocar em rádio universitária.",
+      "en": "Five tracks recorded over two weekends and released for free online. “Cachorro Solto” becomes the band's first song on college radio."
+    }
+  },
+  {
+    "year": "2013",
+    "type": "lineup",
+    "title": { "pt": "Marcão assume o baixo", "en": "Marcão takes over on bass" },
+    "description": {
+      "pt": "Chamado para cobrir dois shows em Pelotas, Marcão nunca mais devolveu o contrabaixo. A formação atual está fechada desde então.",
+      "en": "Called in to cover two shows in Pelotas, Marcão never gave the bass back. The current line-up has been settled ever since."
+    }
+  },
+  {
+    "year": "2015",
+    "type": "release",
+    "title": { "pt": "Primeiro álbum: “Ferrugem”", "en": "First album: “Ferrugem”" },
+    "description": {
+      "pt": "Onze faixas gravadas ao vivo em estúdio, sem clique e sem retoque. O disco entra em listas de melhores do ano da imprensa independente gaúcha.",
+      "en": "Eleven tracks tracked live in the studio, no click and no fixes. The record lands on year-end lists across the southern Brazilian independent press."
+    }
+  },
+  {
+    "year": "2017",
+    "type": "show",
+    "title": { "pt": "Turnê Sul-Sudeste, 24 cidades", "en": "South-Southeast tour, 24 cities" },
+    "description": {
+      "pt": "Primeira turnê fora do estado, em uma van comprada com financiamento coletivo. Abre para nomes grandes do rock nacional em São Paulo e Curitiba.",
+      "en": "First tour outside the home state, in a van bought through crowdfunding. Opens for major Brazilian rock acts in São Paulo and Curitiba."
+    }
+  },
+  {
+    "year": "2019",
+    "type": "award",
+    "title": { "pt": "Prêmio Uivo de Ouro", "en": "Uivo de Ouro Award" },
+    "description": {
+      "pt": "Melhor banda revelação de rock no prêmio da cena independente do Sul. A estatueta segue em cima da caixa de som do estúdio até hoje.",
+      "en": "Best new rock act at the southern independent scene awards. The trophy still sits on top of a studio speaker cabinet."
+    }
+  },
+  {
+    "year": "2021",
+    "type": "release",
+    "title": { "pt": "Sessão acústica “Ao Vivo na Garagem”", "en": "Acoustic session “Live in the Garage”" },
+    "description": {
+      "pt": "Com os palcos fechados, a banda volta à garagem original e transmite oito músicas ao vivo. O vídeo passa de meio milhão de visualizações.",
+      "en": "With venues closed, the band returns to the original garage and streams eight songs live. The video passes half a million views."
+    }
+  },
+  {
+    "year": "2023",
+    "type": "release",
+    "title": { "pt": "Álbum “Tempestade Seca”", "en": "Album “Tempestade Seca”" },
+    "description": {
+      "pt": "O disco mais pesado da carreira, gravado em quinze dias e lançado simultaneamente em português e inglês. Marca a estreia da versão “The Rusty Dogs”.",
+      "en": "The heaviest record of their career, cut in fifteen days and released simultaneously in Portuguese and English. It marks the debut of the “The Rusty Dogs” persona."
+    }
+  },
+  {
+    "year": "2025",
+    "type": "show",
+    "title": { "pt": "Primeira temporada europeia", "en": "First European run" },
+    "description": {
+      "pt": "Doze datas em Portugal, Espanha e Alemanha, com casas lotadas em Lisboa e Berlim. A turnê rende o registro ao vivo que sai em 2026.",
+      "en": "Twelve dates across Portugal, Spain and Germany, with sold-out rooms in Lisbon and Berlin. The run yields the live album due in 2026."
+    }
+  }
+]

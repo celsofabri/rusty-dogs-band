@@ -1,0 +1,99 @@
+// Bloco de secao e cabecalho padronizado.
+@use "../utils" as *;
+
+.section {
+  position: relative;
+  padding-block: $space-8;
+
+  @include mq("md") {
+    padding-block: $space-9;
+  }
+
+  &--dark {
+    background: $color-surface;
+    border-block: $border-subtle;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.section__header {
+  max-width: $container-narrow;
+  margin-bottom: $space-7;
+
+  .section--center & {
+    margin-inline: auto;
+  }
+}
+
+.section__kicker {
+  @include kicker;
+  margin: 0 0 $space-3;
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+
+  &::after {
+    content: "";
+    flex: 1;
+    max-width: 90px;
+    height: 1px;
+    background: linear-gradient(90deg, $color-rust, transparent);
+  }
+
+  .section--center &::before {
+    content: "";
+    flex: 1;
+    max-width: 90px;
+    height: 1px;
+    background: linear-gradient(270deg, $color-rust, transparent);
+  }
+}
+
+.section__title {
+  margin-bottom: $space-4;
+}
+
+.section__subtitle {
+  @include lead;
+  margin: 0;
+}
+
+.section__footer {
+  margin-top: $space-7;
+  display: flex;
+  justify-content: center;
+}
+
+// Cabecalho das paginas internas.
+.page-header {
+  position: relative;
+  padding-top: calc(#{$header-height} + #{$space-8});
+  padding-bottom: $space-7;
+  background:
+    radial-gradient(120% 140% at 50% 0%, rgba(232, 98, 31, 0.16) 0%, transparent 60%),
+    $color-night;
+  border-bottom: $border-subtle;
+
+  @include mq("md") {
+    padding-top: calc(#{$header-height} + #{$space-9});
+    padding-bottom: $space-8;
+  }
+}
+
+.page-header__kicker {
+  @include kicker;
+  margin: 0 0 $space-3;
+}
+
+.page-header__title {
+  margin: 0 0 $space-4;
+}
+
+.page-header__subtitle {
+  @include lead;
+  max-width: $container-narrow;
+  margin: 0;
+}

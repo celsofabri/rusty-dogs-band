@@ -1,0 +1,56 @@
+// ---------------------------------------------------------------------------
+// Escala tipografica
+// Tamanhos fluidos com clamp() para funcionar do mobile ao desktop sem saltos.
+// ---------------------------------------------------------------------------
+@use "../utils" as *;
+
+h1,
+h2,
+h3,
+h4 {
+  @include display-font;
+  margin: 0 0 $space-4;
+  color: $color-bone;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 4.75rem);
+}
+
+h2 {
+  font-size: clamp(1.875rem, 4.4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.4vw, 1.625rem);
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+p {
+  margin: 0 0 $space-4;
+}
+
+strong {
+  font-weight: 600;
+  color: $color-bone;
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+.kicker {
+  @include kicker;
+}
+
+.lead {
+  @include lead;
+}
+
+.text-muted {
+  color: $color-muted;
+}

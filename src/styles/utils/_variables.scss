@@ -1,0 +1,85 @@
+// ---------------------------------------------------------------------------
+// Design tokens
+// Paleta extraida da identidade visual da banda (logo enferrujado + arte de
+// tempestade): laranja ferrugem, dourado brasa, aco, noite e osso.
+// ---------------------------------------------------------------------------
+
+// Cores de marca
+$color-rust:        #e8621f; // laranja ferrugem (destaque principal)
+$color-rust-dark:   #b8471244;
+$color-ember:       #f5a623; // dourado brasa (gradiente / hover)
+$color-lightning:   #9fc6e8; // azul do raio (detalhes frios)
+
+// Superficies (dark mode como padrao)
+$color-night:       #0a0d12; // fundo da pagina
+$color-surface:     #12161d; // cards e secoes alternadas
+$color-surface-alt: #171c25; // cards sobre secao escura
+$color-elevated:    #1e242e; // hover / campos de formulario
+
+// Texto
+$color-bone:        #ede4d3; // texto principal (contraste 14.4:1 sobre $color-night)
+$color-muted:       #a4adb8; // texto secundario (contraste 7.9:1 sobre $color-night)
+$color-dim:         #79838f; // metadados
+
+// Estados
+$color-error:       #ff7a6b;
+$color-success:     #7bd88f;
+
+// Bordas e sombras
+$border-subtle: 1px solid rgba(237, 228, 211, 0.09);
+$border-strong: 1px solid rgba(237, 228, 211, 0.18);
+$shadow-card: 0 18px 40px rgba(0, 0, 0, 0.45);
+$shadow-lift: 0 26px 60px rgba(0, 0, 0, 0.6);
+
+// Gradientes
+$gradient-rust: linear-gradient(115deg, #{$color-rust} 0%, #{$color-ember} 100%);
+$gradient-scrim: linear-gradient(
+  180deg,
+  rgba(10, 13, 18, 0.82) 0%,
+  rgba(10, 13, 18, 0.58) 28%,
+  rgba(10, 13, 18, 0.72) 58%,
+  rgba(10, 13, 18, 0.95) 86%,
+  #{$color-night} 100%
+);
+
+// Tipografia
+$font-display: "Oswald", "Arial Narrow", "Helvetica Neue", sans-serif;
+$font-body: "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+// Espacamento (escala de 4px)
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.5rem;
+$space-6: 2rem;
+$space-7: 3rem;
+$space-8: 4rem;
+$space-9: 6rem;
+
+// Layout
+$container-max: 1200px;
+$container-narrow: 780px;
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 20px;
+$header-height: 76px;
+
+// Camadas
+$z-header: 100;
+$z-menu: 110;
+$z-modal: 200;
+$z-skip: 300;
+
+// Breakpoints (mobile-first)
+$breakpoints: (
+  "sm": 480px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1280px,
+);
+
+// Transicoes
+$ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+$transition-fast: 160ms $ease-out;
+$transition-base: 280ms $ease-out;

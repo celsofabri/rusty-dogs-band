@@ -1,0 +1,64 @@
+// Lightbox acessivel.
+@use "../utils" as *;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: $z-modal;
+  display: grid;
+  place-items: center;
+  padding: $space-4;
+  animation: fade-in 200ms $ease-out;
+}
+
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 7, 10, 0.9);
+  backdrop-filter: blur(6px);
+}
+
+.modal__dialog {
+  position: relative;
+  width: min(1000px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: $space-5;
+  background: $color-surface;
+  border: $border-strong;
+  border-radius: $radius-md;
+  box-shadow: $shadow-lift;
+  animation: rise-in 320ms $ease-out;
+
+  @include mq("md") {
+    padding: $space-6;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: $space-3;
+  right: $space-3;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(10, 13, 18, 0.8);
+  border: $border-subtle;
+  color: $color-bone;
+  transition: background $transition-fast, color $transition-fast;
+
+  &:hover {
+    background: $color-rust;
+    color: #14100c;
+  }
+}
+
+.modal__title {
+  @include display-font(500);
+  font-size: 1.25rem;
+  padding-right: $space-8;
+  margin-bottom: $space-4;
+}

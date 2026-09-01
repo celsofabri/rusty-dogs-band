@@ -1,0 +1,20 @@
+// Pagina de contato: formulario + coluna lateral de canais.
+@use "../utils" as *;
+
+.contact {
+  display: grid;
+  gap: $space-6;
+  align-items: start;
+
+  @include mq("lg") {
+    grid-template-columns: 1.35fr 0.85fr;
+    gap: $space-7;
+  }
+}
+
+.contact__aside {
+  @include mq("lg") {
+    position: sticky;
+    top: calc(#{$header-height} + #{$space-5});
+  }
+}

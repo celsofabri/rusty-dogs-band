@@ -1,0 +1,63 @@
+{
+  "band": {
+    "pt": "Os Cães Enferrujados",
+    "en": "The Rusty Dogs"
+  },
+  "tagline": {
+    "pt": "Rock com ferrugem, tempestade e estrada.",
+    "en": "Rock made of rust, thunder and long roads."
+  },
+  "hometown": {
+    "pt": "Porto Alegre, RS — Brasil",
+    "en": "Porto Alegre, Brazil"
+  },
+  "formedIn": 2009,
+  "shortBio": {
+    "pt": "Quatro amigos, quatro décadas de discos gastos e um som que atravessa o rock nacional dos anos 90, o classic rock e o indie da virada dos anos 2000. Guitarras sujas, refrões grandes e letras que falam de cidade, cansaço e recomeço.",
+    "en": "Four friends, four decades of worn-out records and a sound that bridges 90s Brazilian rock, classic rock and early-2000s indie. Dirty guitars, big choruses and lyrics about the city, exhaustion and starting over."
+  },
+  "contact": {
+    "general": "contato@rustydogs.band",
+    "booking": "booking@rustydogs.band",
+    "press": "imprensa@rustydogs.band",
+    "phone": "+55 51 90000-0000"
+  },
+  "social": [
+    {
+      "id": "spotify",
+      "label": "Spotify",
+      "url": "https://open.spotify.com/",
+      "handle": "The Rusty Dogs"
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/",
+      "handle": "@therustydogs"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/",
+      "handle": "@therustydogs"
+    },
+    {
+      "id": "applemusic",
+      "label": "Apple Music",
+      "url": "https://music.apple.com/",
+      "handle": "The Rusty Dogs"
+    },
+    {
+      "id": "deezer",
+      "label": "Deezer",
+      "url": "https://www.deezer.com/",
+      "handle": "The Rusty Dogs"
+    }
+  ],
+  "latestRelease": {
+    "title": "Tempestade Seca",
+    "year": 2023,
+    "type": { "pt": "Álbum", "en": "Album" },
+    "url": "https://open.spotify.com/"
+  }
+}

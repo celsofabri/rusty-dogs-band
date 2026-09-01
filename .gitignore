@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+.pnp/
+.pnp.js
+
+# Build do Gatsby
+.cache/
+public/
+
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-error.log*
+.idea/
+.vscode/

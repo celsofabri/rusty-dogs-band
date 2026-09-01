@@ -1,0 +1,48 @@
+// Home: bloco "sobre" com poster e secao de plataformas.
+@use "../utils" as *;
+
+.about-preview {
+  display: grid;
+  gap: $space-7;
+  align-items: center;
+
+  @include mq("lg") {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: $space-8;
+  }
+}
+
+.about-preview__lead {
+  font-size: clamp(1.0625rem, 1.7vw, 1.25rem);
+  color: $color-muted;
+}
+
+.poster {
+  position: relative;
+  border-radius: $radius-md;
+  overflow: hidden;
+  border: $border-subtle;
+  box-shadow: $shadow-lift;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(232, 98, 31, 0.12), transparent 55%);
+    pointer-events: none;
+  }
+}
+
+.poster__image {
+  transition: transform 900ms $ease-out;
+
+  .poster:hover & {
+    transform: scale(1.03);
+  }
+}
+
+.section--social {
+  background:
+    radial-gradient(90% 120% at 50% 100%, rgba(232, 98, 31, 0.12) 0%, transparent 65%),
+    $color-night;
+}

@@ -1,0 +1,94 @@
+// Rodape com navegacao, contatos e redes.
+@use "../utils" as *;
+
+.footer {
+  position: relative;
+  margin-top: auto;
+  background: $color-surface;
+  border-top: 2px solid transparent;
+  border-image: $gradient-rust 1;
+  padding-top: $space-8;
+}
+
+.footer__inner {
+  display: grid;
+  gap: $space-7;
+  padding-bottom: $space-7;
+
+  @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq("lg") {
+    grid-template-columns: 1.6fr 1fr 1.2fr 1fr;
+    gap: $space-6;
+  }
+}
+
+.footer__name {
+  @include display-font;
+  font-size: 1.5rem;
+  margin: 0 0 $space-2;
+}
+
+.footer__tagline {
+  color: $color-muted;
+  margin: 0 0 $space-2;
+  max-width: 30ch;
+}
+
+.footer__hometown {
+  color: $color-dim;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.footer__title {
+  @include display-font(500);
+  font-size: 0.875rem;
+  letter-spacing: 0.18em;
+  color: $color-rust;
+  margin-bottom: $space-4;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  color: $color-muted;
+
+  a:hover {
+    color: $color-ember;
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-4;
+  padding-block: $space-5;
+  border-top: $border-subtle;
+  color: $color-dim;
+  font-size: 0.8125rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer__top {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  font-family: $font-display;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8125rem;
+  color: $color-muted;
+
+  &:hover {
+    color: $color-rust;
+  }
+}

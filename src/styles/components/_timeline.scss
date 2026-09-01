@@ -1,0 +1,152 @@
+// Linha do tempo vertical com eixo central no desktop.
+@use "../utils" as *;
+
+.timeline {
+  position: relative;
+  margin-top: $space-7;
+  padding-left: $space-6;
+  text-align: left;
+
+  // Eixo
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 7px;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, rgba(232, 98, 31, 0.7) 12%, rgba(232, 98, 31, 0.7) 88%, transparent);
+  }
+
+  @include mq("lg") {
+    padding-left: 0;
+    max-width: 1000px;
+    margin-inline: auto;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.timeline__item {
+  position: relative;
+  padding-bottom: $space-6;
+
+  @include mq("lg") {
+    width: 50%;
+    padding-bottom: $space-7;
+
+    &--left {
+      padding-right: $space-7;
+      text-align: right;
+    }
+
+    &--right {
+      margin-left: 50%;
+      padding-left: $space-7;
+    }
+  }
+}
+
+.timeline__marker {
+  position: absolute;
+  top: 6px;
+  left: -$space-6;
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+
+  @include mq("lg") {
+    left: auto;
+    right: -8px;
+
+    .timeline__item--right & {
+      right: auto;
+      left: -8px;
+    }
+  }
+}
+
+.timeline__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: $color-night;
+  border: 2px solid $color-rust;
+  box-shadow: 0 0 0 4px rgba(232, 98, 31, 0.16);
+  transition: background $transition-base, box-shadow $transition-base;
+
+  .timeline__item.is-visible & {
+    background: $gradient-rust;
+    box-shadow: 0 0 0 6px rgba(232, 98, 31, 0.2);
+  }
+}
+
+.timeline__card {
+  @include card-surface;
+  padding: $space-5;
+  transition: transform $transition-base, border-color $transition-base;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(232, 98, 31, 0.45);
+  }
+
+  .section--dark & {
+    background: $color-surface-alt;
+  }
+}
+
+.timeline__head {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  margin-bottom: $space-3;
+
+  .timeline__item--left & {
+    @include mq("lg") {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.timeline__year {
+  @include display-font;
+  font-size: 1.75rem;
+  @include gradient-text;
+}
+
+.timeline__tag {
+  padding: 2px $space-3;
+  border-radius: 999px;
+  border: $border-subtle;
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $color-muted;
+
+  &--award {
+    color: $color-ember;
+    border-color: rgba(245, 166, 35, 0.4);
+  }
+
+  &--release {
+    color: $color-lightning;
+    border-color: rgba(159, 198, 232, 0.35);
+  }
+}
+
+.timeline__title {
+  font-size: 1.25rem;
+  margin-bottom: $space-3;
+}
+
+.timeline__text {
+  margin: 0;
+  color: $color-muted;
+  font-size: 0.9375rem;
+}

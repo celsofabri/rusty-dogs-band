@@ -1,0 +1,49 @@
+// Pagina Sobre: historia em duas colunas.
+@use "../utils" as *;
+
+.story {
+  display: grid;
+  gap: $space-6;
+  align-items: start;
+
+  @include mq("lg") {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: $space-8;
+  }
+}
+
+.story__media {
+  position: relative;
+  border-radius: $radius-md;
+  overflow: hidden;
+  border: $border-subtle;
+  box-shadow: $shadow-card;
+
+  @include mq("lg") {
+    position: sticky;
+    top: calc(#{$header-height} + #{$space-5});
+  }
+}
+
+.story__image {
+  filter: saturate(0.9) contrast(1.05);
+}
+
+.story__title {
+  font-size: clamp(1.75rem, 3.4vw, 2.5rem);
+  margin-bottom: $space-5;
+}
+
+.story__text p {
+  color: $color-muted;
+  font-size: 1.0625rem;
+
+  &:first-of-type::first-letter {
+    float: left;
+    margin: 6px $space-3 0 0;
+    font-family: $font-display;
+    font-size: 3.75rem;
+    line-height: 0.8;
+    @include gradient-text;
+  }
+}

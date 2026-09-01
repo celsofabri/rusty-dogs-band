@@ -1,0 +1,28 @@
+// Pagina 404.
+@use "../utils" as *;
+
+.not-found {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  padding-top: $header-height;
+  text-align: center;
+}
+
+.not-found__code {
+  @include display-font;
+  font-size: clamp(5rem, 18vw, 11rem);
+  line-height: 1;
+  margin: 0;
+  @include gradient-text;
+}
+
+.not-found__title {
+  margin-bottom: $space-4;
+}
+
+.not-found__text {
+  max-width: 44ch;
+  margin: 0 auto $space-6;
+  color: $color-muted;
+}
