@@ -1,6 +1,6 @@
 {
   "band": {
-    "pt": "Os Cães Enferrujados",
+    "pt": "Cães Enferrujados",
     "en": "The Rusty Dogs"
   },
   "tagline": {
@@ -8,56 +8,56 @@
     "en": "Rock made of rust, thunder and long roads."
   },
   "hometown": {
-    "pt": "Porto Alegre, RS — Brasil",
-    "en": "Porto Alegre, Brazil"
+    "pt": "Curitiba, PR — Brasil",
+    "en": "Curitiba, Paraná — Brazil"
   },
-  "formedIn": 2009,
+  "formedIn": 2025,
   "shortBio": {
-    "pt": "Quatro amigos, quatro décadas de discos gastos e um som que atravessa o rock nacional dos anos 90, o classic rock e o indie da virada dos anos 2000. Guitarras sujas, refrões grandes e letras que falam de cidade, cansaço e recomeço.",
-    "en": "Four friends, four decades of worn-out records and a sound that bridges 90s Brazilian rock, classic rock and early-2000s indie. Dirty guitars, big choruses and lyrics about the city, exhaustion and starting over."
+    "pt": "Quatro amigos de Curitiba que resolveram, em 2025, tocar juntos as músicas que ouvem desde sempre. O repertório atravessa o rock nacional dos Engenheiros do Hawaii, Cachorro Grande e Ira!, passa pelo peso de Led Zeppelin e Ozzy Osbourne e chega no nervo de U2, The Strokes e Kings of Leon.",
+    "en": "Four friends from Curitiba who decided, in 2025, to finally play together the songs they had been listening to all their lives. The set runs from Brazilian rock — Engenheiros do Hawaii, Cachorro Grande, Ira! — through the weight of Led Zeppelin and Ozzy Osbourne and into the nerve of U2, The Strokes and Kings of Leon."
   },
   "contact": {
-    "general": "contato@rustydogs.band",
-    "booking": "booking@rustydogs.band",
-    "press": "imprensa@rustydogs.band",
-    "phone": "+55 51 90000-0000"
+    "general": "contato@caesenferrujados.band",
+    "booking": "booking@caesenferrujados.band",
+    "press": "imprensa@caesenferrujados.band",
+    "phone": "+55 41 90000-0000"
   },
   "social": [
     {
       "id": "spotify",
       "label": "Spotify",
       "url": "https://open.spotify.com/",
-      "handle": "The Rusty Dogs"
+      "handle": "Cães Enferrujados"
     },
     {
       "id": "youtube",
       "label": "YouTube",
       "url": "https://www.youtube.com/",
-      "handle": "@therustydogs"
+      "handle": "@caesenferrujados"
     },
     {
       "id": "instagram",
       "label": "Instagram",
       "url": "https://www.instagram.com/",
-      "handle": "@therustydogs"
+      "handle": "@caesenferrujados"
     },
     {
       "id": "applemusic",
       "label": "Apple Music",
       "url": "https://music.apple.com/",
-      "handle": "The Rusty Dogs"
+      "handle": "Cães Enferrujados"
     },
     {
       "id": "deezer",
       "label": "Deezer",
       "url": "https://www.deezer.com/",
-      "handle": "The Rusty Dogs"
+      "handle": "Cães Enferrujados"
     }
   ],
   "latestRelease": {
-    "title": "Tempestade Seca",
-    "year": 2023,
-    "type": { "pt": "Álbum", "en": "Album" },
+    "title": "Ferrugem",
+    "year": 2026,
+    "type": { "pt": "Single", "en": "Single" },
     "url": "https://open.spotify.com/"
   }
 }

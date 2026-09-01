@@ -1,80 +1,80 @@
 [
   {
-    "id": "tempestade-seca",
+    "id": "ferrugem",
     "youtubeId": "fJ9rUzIMcZQ",
     "thumbnail": "video-4.jpg",
     "category": "clipes",
-    "year": 2023,
+    "year": 2026,
     "duration": "4:12",
-    "title": { "pt": "Tempestade Seca", "en": "Tempestade Seca" },
+    "title": { "pt": "Ferrugem", "en": "Ferrugem" },
     "description": {
-      "pt": "Clipe oficial da faixa-título do álbum de 2023, gravado em um galpão abandonado na zona norte.",
-      "en": "Official video for the title track of the 2023 album, shot in an abandoned warehouse on the north side of town."
+      "pt": "Clipe do primeiro single autoral da banda, filmado no galpão onde saem os ensaios.",
+      "en": "Video for the band's first original single, shot in the space where the rehearsals happen."
     }
   },
   {
-    "id": "cachorro-solto",
+    "id": "estrada-de-volta",
     "youtubeId": "1w7OgIMMRc4",
     "thumbnail": "video-2.jpg",
     "category": "clipes",
-    "year": 2021,
+    "year": 2026,
     "duration": "3:38",
-    "title": { "pt": "Cachorro Solto", "en": "Loose Dog" },
+    "title": { "pt": "Estrada de Volta", "en": "Estrada de Volta" },
     "description": {
-      "pt": "A música que apresentou a banda ao público, reeditada em 2021 com um clipe novo em plano-sequência.",
-      "en": "The song that introduced the band, reissued in 2021 with a new single-take video."
+      "pt": "Segunda faixa autoral, gravada em um único take com a banda inteira na mesma sala.",
+      "en": "The second original track, recorded in a single take with the whole band in one room."
     }
   },
   {
-    "id": "ao-vivo-na-garagem",
+    "id": "ao-vivo-no-ensaio",
     "youtubeId": "kXYiU_JCYtU",
     "thumbnail": "video-1.jpg",
     "category": "ao-vivo",
-    "year": 2021,
+    "year": 2026,
     "duration": "42:07",
-    "title": { "pt": "Ao Vivo na Garagem (sessão completa)", "en": "Live in the Garage (full session)" },
+    "title": { "pt": "Ao vivo no ensaio (sessão completa)", "en": "Live at rehearsal (full session)" },
     "description": {
-      "pt": "Oito músicas em versão acústica, gravadas no mesmo lugar onde a banda começou.",
-      "en": "Eight acoustic songs recorded in the same place where the band started."
+      "pt": "Uma hora de repertório tocada do começo ao fim, sem plateia e sem retoque, do jeito que sai no ensaio de quinta.",
+      "en": "An hour of songs played start to finish, no audience and no fixes, exactly as it comes out on a Thursday rehearsal."
     }
   },
   {
-    "id": "porto-alegre-2025",
+    "id": "primeiro-show",
     "youtubeId": "hTWKbfoikeg",
     "thumbnail": "video-6.jpg",
     "category": "ao-vivo",
     "year": 2025,
     "duration": "8:54",
-    "title": { "pt": "Encerramento da turnê — Porto Alegre", "en": "Tour closing night — Porto Alegre" },
+    "title": { "pt": "Primeiro show em Curitiba", "en": "First show in Curitiba" },
     "description": {
-      "pt": "Os últimos vinte minutos do show de encerramento, com a plateia cantando do começo ao fim.",
-      "en": "The last twenty minutes of the closing show, with the crowd singing from start to finish."
+      "pt": "Os últimos minutos da estreia ao vivo, com a casa cheia de amigos cantando junto.",
+      "en": "The closing minutes of the live debut, with a room full of friends singing along."
     }
   },
   {
-    "id": "estudio-tempestade",
+    "id": "como-gravamos",
     "youtubeId": "eVTXPUF4Oz4",
     "thumbnail": "video-3.jpg",
     "category": "bastidores",
-    "year": 2023,
+    "year": 2026,
     "duration": "11:20",
-    "title": { "pt": "15 dias para gravar um disco", "en": "Fifteen days to record an album" },
+    "title": { "pt": "Como gravamos “Ferrugem”", "en": "How we recorded “Ferrugem”" },
     "description": {
-      "pt": "Documentário curto sobre a gravação de “Tempestade Seca”, do primeiro take à mixagem final.",
-      "en": "Short documentary on the making of “Tempestade Seca”, from first take to final mix."
+      "pt": "Do primeiro take ao mix final: o processo caseiro por trás do primeiro single da banda.",
+      "en": "From the first take to the final mix: the homemade process behind the band's first single."
     }
   },
   {
-    "id": "estrada-europa",
+    "id": "ensaio-de-quinta",
     "youtubeId": "dQw4w9WgXcQ",
     "thumbnail": "video-5.jpg",
     "category": "bastidores",
     "year": 2025,
     "duration": "6:45",
-    "title": { "pt": "Diário de estrada — Europa", "en": "Road diary — Europe" },
+    "title": { "pt": "Ensaio de quinta", "en": "Thursday rehearsal" },
     "description": {
-      "pt": "Doze datas, três países e uma van alugada: os bastidores da primeira temporada europeia.",
-      "en": "Twelve dates, three countries and a rented van: behind the scenes of the first European run."
+      "pt": "Como quatro amigos de Curitiba montaram um repertório inteiro em poucos meses de garagem.",
+      "en": "How four friends from Curitiba put together a full setlist in a few months of garage rehearsals."
     }
   }
 ]

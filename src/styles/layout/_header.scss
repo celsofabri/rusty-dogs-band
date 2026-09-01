@@ -136,14 +136,17 @@
 }
 
 // Menu mobile em tela cheia.
+// Fica fora do <header> no DOM: como o header aplica `backdrop-filter`, ele
+// viraria o bloco de contencao deste elemento `fixed` e o menu ficaria preso
+// (e escondido) dentro da faixa do topo.
 .mobile-menu {
   position: fixed;
   inset: $header-height 0 0;
-  z-index: $z-menu;
-  background: rgba(10, 13, 18, 0.98);
-  backdrop-filter: blur(12px);
+  z-index: $z-menu; // acima do header ($z-header)
+  background: $color-night;
   padding: $space-7 0;
   overflow-y: auto;
+  overscroll-behavior: contain;
 
   @include mq("lg") {
     display: none;

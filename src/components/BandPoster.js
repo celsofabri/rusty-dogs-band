@@ -11,7 +11,7 @@ const BandPoster = ({ className = "" }) => {
     return (
       <StaticImage
         src="../images/hero-en.jpg"
-        alt="The Rusty Dogs — official tour poster"
+        alt="The Rusty Dogs — official band poster"
         className={classes}
         layout="constrained"
         width={900}
@@ -25,7 +25,7 @@ const BandPoster = ({ className = "" }) => {
   return (
     <StaticImage
       src="../images/hero-pt.jpg"
-      alt="Os Cães Enferrujados — pôster oficial da turnê"
+      alt="Cães Enferrujados — pôster oficial da banda"
       className={classes}
       layout="constrained"
       width={900}

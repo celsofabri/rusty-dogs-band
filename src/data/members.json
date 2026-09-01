@@ -1,46 +1,50 @@
 [
   {
-    "id": "rafa-moreno",
-    "name": "Rafa Moreno",
+    "id": "juninho-fabri",
+    "stageName": "Juninho Fabri",
+    "fullName": "Celso Fabri Junior",
     "image": "member-2.jpg",
-    "role": { "pt": "Voz e guitarra solo", "en": "Vocals & lead guitar" },
+    "role": { "pt": "Voz, guitarra e gaita", "en": "Vocals, guitar & harmonica" },
     "bio": {
-      "pt": "Escreve quase todas as letras da banda em cadernos que nunca sobrevivem a uma turnê inteira. Cresceu ouvindo Engenheiros do Hawaii e Led Zeppelin no mesmo toca-discos, e o resultado disso está em cada refrão.",
-      "en": "Writes almost every lyric in notebooks that never survive a full tour. Grew up playing Engenheiros do Hawaii and Led Zeppelin on the same turntable, and every chorus shows it."
+      "pt": "Puxa a maior parte das músicas e é quem leva a gaita para os arranjos que pedem um respiro fora da guitarra. Foi de quem partiu a ideia de juntar a turma para ensaiar em 2025.",
+      "en": "Fronts most of the songs and brings the harmonica in whenever an arrangement needs some air outside the guitars. The idea of getting everyone in a room to rehearse in 2025 started here."
     },
-    "since": 2009
+    "since": 2025
   },
   {
-    "id": "teo-vasconcelos",
-    "name": "Téo Vasconcelos",
+    "id": "fe-arqueman",
+    "stageName": "Fe Arqueman",
+    "fullName": "Felipe Arqueman",
     "image": "member-1.jpg",
-    "role": { "pt": "Guitarra base e violão", "en": "Rhythm guitar & acoustic" },
+    "role": { "pt": "Voz e guitarra", "en": "Vocals & guitar" },
     "bio": {
-      "pt": "Responsável pelas camadas limpas que seguram o caos. Toca de ouvido desde os doze anos e coleciona pedais que quase nunca liga — mas quando liga, a música muda de endereço.",
-      "en": "Keeps the clean layers that hold the chaos together. Has played by ear since the age of twelve and collects pedals that rarely get switched on — when they do, the song changes address."
+      "pt": "Divide os vocais e segura as bases limpas que sustentam o peso do resto da banda. Tem no violão a porta de entrada para as versões acústicas do repertório.",
+      "en": "Shares lead vocals and holds the clean rhythm parts that carry the weight of everything else. The acoustic guitar is the doorway into the band's unplugged versions."
     },
-    "since": 2009
+    "since": 2025
   },
   {
-    "id": "marcao-duarte",
-    "name": "Marcão Duarte",
+    "id": "dago-koutton",
+    "stageName": "Dago Koutton",
+    "fullName": "Dagoberto Koutton",
     "image": "member-3.jpg",
     "role": { "pt": "Baixo", "en": "Bass" },
     "bio": {
-      "pt": "Entrou na banda em 2013 para cobrir dois shows e ficou. Vem do hardcore de porão de Porto Alegre e trouxe para o grupo o peso que faltava nos graves.",
-      "en": "Joined in 2013 to cover two shows and never left. Comes from the Porto Alegre basement hardcore scene and brought the low-end weight the band was missing."
+      "pt": "Responsável pelo grave que amarra a banda inteira. Prefere as linhas simples e firmes, no melhor estilo das bandas de rock que a turma cresceu ouvindo.",
+      "en": "In charge of the low end that ties the whole band together. Prefers simple, steady lines, in the spirit of the rock records everyone grew up with."
     },
-    "since": 2013
+    "since": 2025
   },
   {
-    "id": "nico-andrade",
-    "name": "Nico Andrade",
+    "id": "edy-arqueman",
+    "stageName": "Edy Arqueman",
+    "fullName": "Dinei Arqueman",
     "image": "member-4.jpg",
     "role": { "pt": "Bateria", "en": "Drums" },
     "bio": {
-      "pt": "Bateria seca, sem firula, com uma obsessão declarada por gravações ao vivo. Produz os discos da banda no estúdio caseiro montado na garagem da própria casa.",
-      "en": "Dry, no-frills drumming and an open obsession with live recordings. Produces the band's records in a home studio built in the garage."
+      "pt": "Bateria seca, sem firula, marcando o tempo que o resto da banda persegue. Foi quem cedeu a garagem onde saiu o primeiro ensaio.",
+      "en": "Dry, no-frills drumming, setting the tempo the rest of the band chases. Also the one who lent the garage where the first rehearsal happened."
     },
-    "since": 2011
+    "since": 2025
   }
 ]

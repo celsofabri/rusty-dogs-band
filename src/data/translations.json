@@ -18,7 +18,7 @@
       "short": "PT"
     },
     "home": {
-      "kicker": "Desde 2009, de Porto Alegre para a estrada",
+      "kicker": "Desde 2025, de Curitiba para a estrada",
       "ctaListen": "Ouça agora",
       "ctaShows": "Próximos shows",
       "scroll": "Role para descobrir",
@@ -33,24 +33,24 @@
       "socialTitle": "Nas plataformas e nas redes",
       "socialSubtitle": "Coloque o disco para tocar e venha junto na estrada.",
       "latestRelease": "Último lançamento",
-      "statsAlbums": "álbuns lançados",
+      "statsMembers": "integrantes",
+      "statsSongs": "músicas no repertório",
       "statsShows": "shows na estrada",
-      "statsCities": "cidades visitadas",
-      "statsYears": "anos de banda"
+      "statsCities": "cidades visitadas"
     },
     "about": {
       "title": "Sobre a banda",
-      "subtitle": "Quinze anos entre garagens, vans velhas e palcos que foram ficando maiores.",
+      "subtitle": "Uma banda nova de Curitiba: quatro amigos, a mesma discoteca e um repertório montado do zero desde 2025.",
       "storyKicker": "A história",
-      "storyTitle": "Começou com uma placa enferrujada",
+      "storyTitle": "Começou em uma garagem em Curitiba",
       "story": [
-        "Em 2009, Rafa Moreno e Téo Vasconcelos dividiam o aluguel de uma casa velha na Cidade Baixa, em Porto Alegre. A garagem não cabia carro, mas cabia um amplificador, uma bateria emprestada e a teimosia de dois caras que queriam tocar as músicas que ouviam desde a adolescência.",
-        "O nome apareceu antes das músicas: uma placa enferrujada no ferro-velho da esquina, com o desenho de dois cães quase apagado pelo tempo. Ninguém nunca conseguiu explicar direito por que aquilo fazia sentido — mas fazia.",
-        "De lá para cá foram dois EPs, três álbuns, uma van comprada em financiamento coletivo e mais de trezentos shows. O som mudou de pele algumas vezes: passou pelo rock nacional dos anos 90, pelo peso do classic rock e pelo nervo seco do indie dos anos 2000. O que nunca mudou foi o jeito de gravar — ao vivo, todo mundo na mesma sala, com os erros que couberem."
+        "Em 2025, Juninho Fabri e Fe Arqueman combinaram uma coisa simples: parar de falar sobre as músicas que os dois ouviam desde a adolescência e finalmente tocar aquilo. O primeiro ensaio saiu em uma garagem em Curitiba, com o repertório escrito à mão em uma folha só e um amplificador emprestado.",
+        "Dago Koutton assumiu o baixo, Edy Arqueman sentou na bateria e, com os quatro na mesma sala, o encontro de fim de semana virou banda de verdade. O nome apareceu logo depois: uma placa velha, comida de ferrugem, encontrada perto do galpão do ensaio. Ninguém nunca conseguiu explicar direito por que aquilo fazia sentido — mas fazia.",
+        "O som da banda é a soma das quatro discotecas: o rock nacional de Engenheiros do Hawaii, Cachorro Grande e Ira!, o peso de Led Zeppelin e Ozzy Osbourne, e o nervo seco de U2, The Strokes e Kings of Leon. O jeito de tocar, esse não muda: todo mundo na mesma sala, ao vivo, com os erros que couberem."
       ],
       "timelineKicker": "Linha do tempo",
       "timelineTitle": "Os marcos da banda",
-      "timelineSubtitle": "Da primeira ensaiada na garagem à primeira temporada europeia.",
+      "timelineSubtitle": "Do primeiro ensaio em 2025 aos palcos de Curitiba e região.",
       "membersKicker": "A formação",
       "membersTitle": "Quem toca",
       "membersSubtitle": "Quatro pessoas, quatro discotecas diferentes, uma banda só.",
@@ -61,7 +61,8 @@
         "show": "Turnê",
         "award": "Prêmio",
         "lineup": "Formação"
-      }
+      },
+      "memberRealName": "Nome completo"
     },
     "videos": {
       "title": "Vídeos",
@@ -127,10 +128,10 @@
     },
     "seo": {
       "home": "Início",
-      "homeDescription": "Site oficial de Os Cães Enferrujados: rock sujo e melódico de Porto Alegre. Ouça, assista aos vídeos e entre em contato.",
-      "aboutDescription": "A história de Os Cães Enferrujados, a linha do tempo da banda e quem toca em cada instrumento.",
-      "videosDescription": "Clipes oficiais, sessões ao vivo e bastidores de Os Cães Enferrujados.",
-      "contactDescription": "Fale com Os Cães Enferrujados: shows, imprensa, parcerias e contato geral."
+      "homeDescription": "Site oficial dos Cães Enferrujados: banda de rock de Curitiba, PR, formada em 2025. Ouça, assista aos vídeos e entre em contato.",
+      "aboutDescription": "A história dos Cães Enferrujados, banda de rock de Curitiba, PR: a linha do tempo desde 2025 e quem toca em cada instrumento.",
+      "videosDescription": "Clipes, sessões ao vivo e bastidores dos Cães Enferrujados, banda de rock de Curitiba, PR.",
+      "contactDescription": "Fale com os Cães Enferrujados, banda de rock de Curitiba, PR: shows, imprensa, parcerias e contato geral."
     }
   },
   "en": {
@@ -152,7 +153,7 @@
       "short": "EN"
     },
     "home": {
-      "kicker": "From Porto Alegre to the road since 2009",
+      "kicker": "From Curitiba to the road since 2025",
       "ctaListen": "Listen now",
       "ctaShows": "Upcoming shows",
       "scroll": "Scroll to explore",
@@ -167,24 +168,24 @@
       "socialTitle": "On every platform",
       "socialSubtitle": "Put the record on and come along for the ride.",
       "latestRelease": "Latest release",
-      "statsAlbums": "albums released",
+      "statsMembers": "members",
+      "statsSongs": "songs in the setlist",
       "statsShows": "shows played",
-      "statsCities": "cities visited",
-      "statsYears": "years together"
+      "statsCities": "cities visited"
     },
     "about": {
       "title": "About the band",
-      "subtitle": "Fifteen years of garages, old vans and stages that slowly got bigger.",
+      "subtitle": "A new band from Curitiba: four friends, the same record collection and a setlist built from scratch since 2025.",
       "storyKicker": "The story",
-      "storyTitle": "It started with a rusty sign",
+      "storyTitle": "It started in a garage in Curitiba",
       "story": [
-        "In 2009, Rafa Moreno and Téo Vasconcelos shared the rent of an old house in Cidade Baixa, Porto Alegre. The garage was too small for a car, but big enough for an amplifier, a borrowed drum kit and the stubbornness of two guys who wanted to play the songs they had been hearing since they were teenagers.",
-        "The name came before the songs: a rusty sign in the scrapyard around the corner, with two dogs drawn on it, half erased by time. Nobody has ever been able to explain why it made sense — it just did.",
-        "Since then there have been two EPs, three albums, a crowdfunded van and more than three hundred shows. The sound has changed skin a few times: 90s Brazilian rock, the weight of classic rock, the dry nerve of early-2000s indie. What never changed is how they record — live, everyone in the same room, keeping whatever mistakes fit."
+        "In 2025, Juninho Fabri and Fe Arqueman agreed on something simple: stop talking about the songs they had been listening to since they were teenagers and actually play them. The first rehearsal happened in a garage in Curitiba, with the whole setlist handwritten on a single sheet of paper and a borrowed amplifier.",
+        "Dago Koutton took over on bass, Edy Arqueman sat behind the drums, and with all four in the same room a weekend get-together turned into a real band. The name showed up right after: an old sign, eaten away by rust, found near the rehearsal space. Nobody has ever been able to explain why it made sense — it just did.",
+        "The band's sound is the sum of four record collections: the Brazilian rock of Engenheiros do Hawaii, Cachorro Grande and Ira!, the weight of Led Zeppelin and Ozzy Osbourne, and the dry nerve of U2, The Strokes and Kings of Leon. The way they play does not change: everyone in the same room, live, keeping whatever mistakes fit."
       ],
       "timelineKicker": "Timeline",
       "timelineTitle": "Milestones",
-      "timelineSubtitle": "From the first garage rehearsal to the first European run.",
+      "timelineSubtitle": "From the first rehearsal in 2025 to the stages of Curitiba and beyond.",
       "membersKicker": "The line-up",
       "membersTitle": "Who plays",
       "membersSubtitle": "Four people, four very different record collections, one band.",
@@ -195,7 +196,8 @@
         "show": "Touring",
         "award": "Award",
         "lineup": "Line-up"
-      }
+      },
+      "memberRealName": "Full name"
     },
     "videos": {
       "title": "Videos",
@@ -261,10 +263,10 @@
     },
     "seo": {
       "home": "Home",
-      "homeDescription": "Official website of The Rusty Dogs: gritty, melodic rock from southern Brazil. Listen, watch and get in touch.",
-      "aboutDescription": "The story of The Rusty Dogs, the band timeline and who plays what.",
-      "videosDescription": "Official music videos, live sessions and backstage footage from The Rusty Dogs.",
-      "contactDescription": "Get in touch with The Rusty Dogs: booking, press, partnerships and general enquiries."
+      "homeDescription": "Official website of The Rusty Dogs (Cães Enferrujados): rock band from Curitiba, Brazil, formed in 2025. Listen, watch and get in touch.",
+      "aboutDescription": "The story of Cães Enferrujados, a rock band from Curitiba, Brazil: the timeline since 2025 and who plays what.",
+      "videosDescription": "Music videos, live sessions and backstage footage from Cães Enferrujados, a rock band from Curitiba, Brazil.",
+      "contactDescription": "Get in touch with Cães Enferrujados, a rock band from Curitiba, Brazil: booking, press, partnerships and general enquiries."
     }
   }
 }

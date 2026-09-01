@@ -43,11 +43,19 @@ const MembersGrid = () => {
             <article className="member-card">
               <div className="member-card__media">
                 {image ? (
-                  <GatsbyImage image={image} alt={`${member.name} — ${localize(member.role)}`} className="member-card__image" />
+                  <GatsbyImage
+                    image={image}
+                    alt={`${member.stageName} — ${localize(member.role)}`}
+                    className="member-card__image"
+                  />
                 ) : null}
               </div>
               <div className="member-card__body">
-                <h3 className="member-card__name">{member.name}</h3>
+                {/* Nome artistico em destaque; nome completo logo abaixo, discreto. */}
+                <h3 className="member-card__name">
+                  {member.stageName}
+                  <span className="member-card__fullname">{member.fullName}</span>
+                </h3>
                 <p className="member-card__role">{localize(member.role)}</p>
                 <p className="member-card__bio">{localize(member.bio)}</p>
                 <p className="member-card__since">

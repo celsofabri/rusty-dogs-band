@@ -1,6 +1,7 @@
-# The Rusty Dogs / Os Cães Enferrujados
+# Cães Enferrujados / The Rusty Dogs
 
-Site institucional bilíngue (PT/EN) de uma banda de rock, feito em **Gatsby 5 + React + SCSS**.
+Site institucional bilíngue (PT/EN) da banda **Cães Enferrujados**, de Curitiba (PR), formada em 2025.
+Feito em **Gatsby 5 + React + SCSS**.
 
 🔗 **Site publicado:** https://celsofabri.github.io/rusty-dogs-band
 
@@ -100,7 +101,7 @@ no formato `{ "pt": "...", "en": "..." }`.
 | Arquivo | O que controla |
 | --- | --- |
 | `site.json` | Nome da banda, tagline, cidade, bio curta, e-mails, redes sociais e último lançamento |
-| `members.json` | Integrantes: nome, instrumento, mini bio, ano de entrada e arquivo da foto |
+| `members.json` | Integrantes: nome artístico (`stageName`), nome completo (`fullName`), instrumento, mini bio, ano de entrada e arquivo da foto |
 | `timeline.json` | Marcos da linha do tempo (`year`, `type`, `title`, `description`) |
 | `videos.json` | Vídeos: `youtubeId`, categoria, duração, thumbnail e textos |
 | `translations.json` | Todos os rótulos de interface (menu, botões, mensagens de erro...) |
@@ -174,5 +175,5 @@ Se o repositório mudar de nome, ajuste as duas pontas.
 
 ## Licença
 
-Código sob licença MIT. As artes, fotos e o conteúdo da banda são de uso exclusivo do
-projeto.
+Código sob licença MIT. As artes, fotos e o conteúdo da banda são de uso exclusivo dos
+Cães Enferrujados.

@@ -33,7 +33,7 @@ const AboutPage = () => {
           <Reveal className="story__media">
             <StaticImage
               src="../images/band.jpg"
-              alt={`${site.band.pt} — foto oficial da banda`}
+              alt={`${site.band.pt} — foto oficial da banda em Curitiba`}
               className="story__image"
               layout="constrained"
               width={900}

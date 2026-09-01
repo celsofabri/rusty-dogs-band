@@ -11,17 +11,17 @@ import VideoGrid from "../components/VideoGrid"
 import SocialLinks from "../components/SocialLinks"
 import BandPoster from "../components/BandPoster"
 import site from "../data/site.json"
+import members from "../data/members.json"
 import { useLanguage } from "../context/LanguageContext"
 
 const IndexPage = () => {
   const { t, localize } = useLanguage()
-  const years = new Date().getFullYear() - site.formedIn
 
   const stats = [
-    { value: "3", label: t("home.statsAlbums") },
-    { value: "300+", label: t("home.statsShows") },
-    { value: "60", label: t("home.statsCities") },
-    { value: `${years}`, label: t("home.statsYears") },
+    { value: `${members.length}`, label: t("home.statsMembers") },
+    { value: "24", label: t("home.statsSongs") },
+    { value: "18", label: t("home.statsShows") },
+    { value: "6", label: t("home.statsCities") },
   ]
 
   return (
