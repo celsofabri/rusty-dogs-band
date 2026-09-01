@@ -4,10 +4,13 @@
     "stageName": "Juninho Fabri",
     "fullName": "Celso Fabri Junior",
     "image": "member-2.jpg",
-    "role": { "pt": "Voz, guitarra e gaita", "en": "Vocals, guitar & harmonica" },
+    "role": {
+      "pt": "Voz, guitarra e gaita",
+      "en": "Vocals, guitar & harmonica"
+    },
     "bio": {
-      "pt": "Puxa a maior parte das músicas e é quem leva a gaita para os arranjos que pedem um respiro fora da guitarra. Foi de quem partiu a ideia de juntar a turma para ensaiar em 2025.",
-      "en": "Fronts most of the songs and brings the harmonica in whenever an arrangement needs some air outside the guitars. The idea of getting everyone in a room to rehearse in 2025 started here."
+      "pt": "Toca com o Dago desde os anos 2000, primeiro na Dupla 33 Espadas e depois no Sette Erros. Puxa a maior parte das músicas e leva a gaita para os arranjos que pedem um respiro fora da guitarra.",
+      "en": "Has been playing with Dago since the 2000s, first in Dupla 33 Espadas and later in Sette Erros. Fronts most of the songs and brings the harmonica in whenever an arrangement needs some air outside the guitars."
     },
     "since": 2025
   },
@@ -16,10 +19,13 @@
     "stageName": "Fe Arqueman",
     "fullName": "Felipe Arqueman",
     "image": "member-1.jpg",
-    "role": { "pt": "Voz e guitarra", "en": "Vocals & guitar" },
+    "role": {
+      "pt": "Voz e guitarra",
+      "en": "Vocals & guitar"
+    },
     "bio": {
-      "pt": "Divide os vocais e segura as bases limpas que sustentam o peso do resto da banda. Tem no violão a porta de entrada para as versões acústicas do repertório.",
-      "en": "Shares lead vocals and holds the clean rhythm parts that carry the weight of everything else. The acoustic guitar is the doorway into the band's unplugged versions."
+      "pt": "Chegou em julho de 2025, no ensaio que transformou a dupla em trio. Divide os vocais e segura as bases limpas que sustentam o peso do resto da banda.",
+      "en": "Arrived in July 2025, at the rehearsal that turned the duo into a trio. Shares lead vocals and holds the clean rhythm parts that carry the weight of everything else."
     },
     "since": 2025
   },
@@ -28,10 +34,13 @@
     "stageName": "Dago Koutton",
     "fullName": "Dagoberto Koutton",
     "image": "member-3.jpg",
-    "role": { "pt": "Baixo", "en": "Bass" },
+    "role": {
+      "pt": "Baixo",
+      "en": "Bass"
+    },
     "bio": {
-      "pt": "Responsável pelo grave que amarra a banda inteira. Prefere as linhas simples e firmes, no melhor estilo das bandas de rock que a turma cresceu ouvindo.",
-      "en": "In charge of the low end that ties the whole band together. Prefers simple, steady lines, in the spirit of the rock records everyone grew up with."
+      "pt": "Parceiro do Juninho desde o primeiro violão nos anos 2000. É o grave que amarra a banda inteira, sempre nas linhas simples e firmes das bandas de rock que os dois cresceram ouvindo.",
+      "en": "Juninho's partner since the very first acoustic guitar back in the 2000s. He is the low end that ties the whole band together, always in the simple, steady lines of the rock records they both grew up with."
     },
     "since": 2025
   },
@@ -40,10 +49,13 @@
     "stageName": "Edy Arqueman",
     "fullName": "Dinei Arqueman",
     "image": "member-4.jpg",
-    "role": { "pt": "Bateria", "en": "Drums" },
+    "role": {
+      "pt": "Bateria",
+      "en": "Drums"
+    },
     "bio": {
-      "pt": "Bateria seca, sem firula, marcando o tempo que o resto da banda persegue. Foi quem cedeu a garagem onde saiu o primeiro ensaio.",
-      "en": "Dry, no-frills drumming, setting the tempo the rest of the band chases. Also the one who lent the garage where the first rehearsal happened."
+      "pt": "Fechou a formação atual em 2025: começou no cajon e logo migrou para a bateria de mesa. Marca o tempo seco, sem firula, que o resto da banda persegue.",
+      "en": "Completed the current line-up in 2025: started on cajón and soon moved to a tabletop drum kit. Keeps the dry, no-frills time the rest of the band chases."
     },
     "since": 2025
   }

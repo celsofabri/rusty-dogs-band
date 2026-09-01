@@ -103,7 +103,8 @@
 .timeline__head {
   display: flex;
   align-items: center;
-  gap: $space-3;
+  flex-wrap: wrap;
+  gap: $space-2 $space-3;
   margin-bottom: $space-3;
 
   .timeline__item--left & {
@@ -115,7 +116,7 @@
 
 .timeline__year {
   @include display-font;
-  font-size: 1.75rem;
+  font-size: clamp(1.125rem, 2.2vw, 1.5rem);
   @include gradient-text;
 }
 
@@ -134,9 +135,26 @@
     border-color: rgba(245, 166, 35, 0.4);
   }
 
-  &--release {
+  &--release,
+  &--duo {
     color: $color-lightning;
     border-color: rgba(159, 198, 232, 0.35);
+  }
+
+  &--name {
+    color: $color-ember;
+    border-color: rgba(245, 166, 35, 0.4);
+  }
+
+  &--pause {
+    color: $color-dim;
+  }
+
+  &--today {
+    background: $gradient-rust;
+    border-color: transparent;
+    color: #14100c;
+    font-weight: 600;
   }
 }
 
@@ -149,4 +167,102 @@
   margin: 0;
   color: $color-muted;
   font-size: 0.9375rem;
+}
+
+// Marcos que consolidaram a formacao e o nome atuais (2025) ganham destaque.
+.timeline__item--highlight .timeline__card {
+  border-color: rgba(232, 98, 31, 0.55);
+  box-shadow: $shadow-card, 0 0 0 1px rgba(232, 98, 31, 0.18);
+  background-image: linear-gradient(150deg, rgba(232, 98, 31, 0.13), transparent 55%);
+}
+
+.timeline__item--highlight .timeline__dot {
+  width: 18px;
+  height: 18px;
+  background: $gradient-rust;
+  box-shadow: 0 0 0 6px rgba(232, 98, 31, 0.22);
+}
+
+.timeline__milestone {
+  margin: $space-4 0 0;
+  padding-top: $space-3;
+  border-top: 1px solid rgba(232, 98, 31, 0.28);
+  @include kicker;
+  font-size: 0.625rem;
+}
+
+// Registro em video dentro de um marco: capa local + play, abrindo o mesmo
+// lightbox usado na pagina de Videos (o iframe so nasce quando o modal abre).
+.timeline__video {
+  display: block;
+  width: 100%;
+  margin-top: $space-4;
+  text-align: inherit;
+  color: inherit;
+  border-radius: $radius-sm;
+  transition: transform $transition-base;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.timeline__video-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: $radius-sm;
+  border: $border-subtle;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 13, 18, 0.3);
+    transition: background $transition-base;
+  }
+
+  .timeline__video:hover &::after {
+    background: rgba(10, 13, 18, 0.1);
+  }
+}
+
+.timeline__video-play {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: $gradient-rust;
+  color: #14100c;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+  transition: transform $transition-base;
+
+  svg {
+    margin-left: 2px;
+  }
+
+  .timeline__video:hover & {
+    transform: translate(-50%, -50%) scale(1.12);
+  }
+}
+
+.timeline__video-label {
+  display: block;
+  margin-top: $space-3;
+  font-family: $font-display;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $color-muted;
+
+  .timeline__video:hover & {
+    color: $color-bone;
+  }
 }

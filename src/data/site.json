@@ -13,8 +13,8 @@
   },
   "formedIn": 2025,
   "shortBio": {
-    "pt": "Quatro amigos de Curitiba que resolveram, em 2025, tocar juntos as músicas que ouvem desde sempre. O repertório atravessa o rock nacional dos Engenheiros do Hawaii, Cachorro Grande e Ira!, passa pelo peso de Led Zeppelin e Ozzy Osbourne e chega no nervo de U2, The Strokes e Kings of Leon.",
-    "en": "Four friends from Curitiba who decided, in 2025, to finally play together the songs they had been listening to all their lives. The set runs from Brazilian rock — Engenheiros do Hawaii, Cachorro Grande, Ira! — through the weight of Led Zeppelin and Ozzy Osbourne and into the nerve of U2, The Strokes and Kings of Leon."
+    "pt": "Juninho e Dago tocam juntos desde os anos 2000, quando eram uma dupla acústica em Curitiba. Em 2025 se reencontraram, chamaram Fe e Edy, e a dupla virou quarteto. O repertório é a soma das quatro discotecas: Engenheiros do Hawaii, Cachorro Grande e Ira! dividindo espaço com Led Zeppelin, Ozzy Osbourne, U2, The Strokes e Kings of Leon.",
+    "en": "Juninho and Dago have been playing together since the 2000s, back when they were an acoustic duo in Curitiba. In 2025 they got back together, called Fe and Edy in, and the duo became a quartet. The set is the sum of four record collections: Engenheiros do Hawaii, Cachorro Grande and Ira! sharing space with Led Zeppelin, Ozzy Osbourne, U2, The Strokes and Kings of Leon."
   },
   "contact": {
     "general": "contato@caesenferrujados.band",
@@ -54,10 +54,16 @@
       "handle": "Cães Enferrujados"
     }
   ],
-  "latestRelease": {
-    "title": "Ferrugem",
-    "year": 2026,
-    "type": { "pt": "Single", "en": "Single" },
-    "url": "https://open.spotify.com/"
+  "featured": {
+    "title": {
+      "pt": "Primeiro ensaio em trio",
+      "en": "First trio rehearsal"
+    },
+    "year": 2025,
+    "type": {
+      "pt": "Vídeo",
+      "en": "Video"
+    },
+    "url": "https://www.youtube.com/watch?v=RxewFEpE-_8"
   }
 }

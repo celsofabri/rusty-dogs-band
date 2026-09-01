@@ -102,21 +102,27 @@ no formato `{ "pt": "...", "en": "..." }`.
 | --- | --- |
 | `site.json` | Nome da banda, tagline, cidade, bio curta, e-mails, redes sociais e último lançamento |
 | `members.json` | Integrantes: nome artístico (`stageName`), nome completo (`fullName`), instrumento, mini bio, ano de entrada e arquivo da foto |
-| `timeline.json` | Marcos da linha do tempo (`year`, `type`, `title`, `description`) |
+| `timeline.json` | Marcos da linha do tempo (`period`, `datetime`, `type`, `title`, `description`, `highlight`, `video`) |
 | `videos.json` | Vídeos: `youtubeId`, categoria, duração, thumbnail e textos |
 | `translations.json` | Todos os rótulos de interface (menu, botões, mensagens de erro...) |
 
-**Vídeos:** os `youtubeId` atuais são placeholders de vídeos públicos, só para o player
-funcionar na demonstração. Troque pelos IDs reais do canal da banda — o ID é o trecho
-depois de `watch?v=` na URL do YouTube. As thumbnails são imagens locais em
+**Vídeos:** o primeiro item (`primeiro-ensaio-trio`, ID `RxewFEpE-_8`) é o vídeo real do
+primeiro ensaio em trio, de julho de 2025 — o mesmo que aparece no marco da timeline em
+`timeline.json`. Os outros cinco `youtubeId` ainda são placeholders de vídeos públicos, só
+para o player funcionar; troque pelos IDs reais do canal da banda — o ID é o trecho depois
+de `watch?v=` na URL do YouTube. As thumbnails são imagens locais em
 `src/images/videos/` (otimizadas pelo Gatsby), então o YouTube só é acionado no clique.
 
 **Integrantes e thumbnails:** coloque o arquivo em `src/images/members/` ou
 `src/images/videos/` e informe apenas o nome do arquivo no JSON. As imagens são
 consultadas por GraphQL e otimizadas automaticamente.
 
-**Tipos aceitos na timeline:** `formation`, `release`, `show`, `award`, `lineup`
-(cada um tem sua etiqueta colorida).
+**Tipos aceitos na timeline:** `duo`, `name`, `pause`, `reunion`, `lineup`, `rehearsal`,
+`today` (além de `formation`, `release`, `show` e `award`, mantidos para uso futuro). Cada
+um tem sua etiqueta. Um marco com `"highlight": true` ganha destaque visual — é assim que
+os marcos de 2025 (quarteto e nome atual) se diferenciam da origem da dupla nos anos 2000.
+Um marco com `video` (`youtubeId` + `thumbnail` + `title`) exibe a capa com botão de play e
+abre o mesmo lightbox da página de Vídeos.
 
 ---
 

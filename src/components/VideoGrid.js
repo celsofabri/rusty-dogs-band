@@ -9,6 +9,7 @@ import React, { useMemo, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Modal from "./Modal"
+import VideoPlayer from "./VideoPlayer"
 import Reveal from "./Reveal"
 import Icon from "./Icon"
 import videos from "../data/videos.json"
@@ -88,9 +89,11 @@ const VideoGrid = ({ items = videos, showFilters = true, limit }) => {
                       <span className="video-card__play" aria-hidden="true">
                         <Icon name="play" size={26} />
                       </span>
-                      <span className="video-card__duration" aria-hidden="true">
-                        {video.duration}
-                      </span>
+                      {video.duration ? (
+                        <span className="video-card__duration" aria-hidden="true">
+                          {video.duration}
+                        </span>
+                      ) : null}
                     </span>
                     <span className="video-card__body">
                       <span className="video-card__category">{t(`videos.categories.${video.category}`)}</span>
@@ -113,15 +116,7 @@ const VideoGrid = ({ items = videos, showFilters = true, limit }) => {
         closeLabel={t("videos.close")}
       >
         {activeVideo ? (
-          <div className="video-player">
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${activeVideo.youtubeId}?autoplay=1&rel=0`}
-              title={localize(activeVideo.title)}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              loading="lazy"
-            />
-          </div>
+          <VideoPlayer youtubeId={activeVideo.youtubeId} title={localize(activeVideo.title)} />
         ) : null}
       </Modal>
     </div>

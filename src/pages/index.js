@@ -19,9 +19,9 @@ const IndexPage = () => {
 
   const stats = [
     { value: `${members.length}`, label: t("home.statsMembers") },
-    { value: "24", label: t("home.statsSongs") },
-    { value: "18", label: t("home.statsShows") },
-    { value: "6", label: t("home.statsCities") },
+    { value: "2002", label: t("home.statsStart") },
+    { value: "2025", label: t("home.statsQuartet") },
+    { value: "3", label: t("home.statsNames") },
   ]
 
   return (
@@ -81,14 +81,14 @@ const IndexPage = () => {
       >
         <Reveal className="release-card">
           <div className="release-card__info">
-            <p className="release-card__label">{t("home.latestRelease")}</p>
-            <p className="release-card__title">{site.latestRelease.title}</p>
+            <p className="release-card__label">{t("home.featured")}</p>
+            <p className="release-card__title">{localize(site.featured.title)}</p>
             <p className="release-card__meta">
-              {localize(site.latestRelease.type)} · {site.latestRelease.year}
+              {localize(site.featured.type)} · {site.featured.year}
             </p>
           </div>
-          <Button href={site.latestRelease.url} variant="primary" icon={<Icon name="spotify" size={20} />}>
-            {t("home.ctaListen")}
+          <Button href={site.featured.url} variant="primary" icon={<Icon name="youtube" size={20} />}>
+            {t("home.ctaWatch")}
           </Button>
         </Reveal>
 

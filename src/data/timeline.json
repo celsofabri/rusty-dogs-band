@@ -1,56 +1,122 @@
 [
   {
-    "year": "2025",
-    "type": "formation",
-    "title": { "pt": "Formação da banda em Curitiba, PR", "en": "The band is formed in Curitiba, Brazil" },
+    "id": "dupla-33-espadas",
+    "period": { "pt": "2002 – 2004", "en": "2002 – 2004" },
+    "datetime": "2002",
+    "type": "duo",
+    "title": { "pt": "Nasce a Dupla 33 Espadas", "en": "Dupla 33 Espadas is born" },
     "description": {
-      "pt": "Juninho e Fe combinam de tocar juntos as músicas que ouvem desde a adolescência. O primeiro ensaio sai em uma garagem em Curitiba, com o repertório escrito à mão em uma folha só.",
-      "en": "Juninho and Fe agree to finally play together the songs they have been listening to since they were teenagers. The first rehearsal happens in a garage in Curitiba, with the whole setlist handwritten on a single sheet of paper."
+      "pt": "Juninho Fabri e Dago Koutton começam a tocar juntos como dupla acústica, no meio dos anos 2000. Dois violões, o repertório que os dois gostavam e o primeiro nome da história: Dupla 33 Espadas.",
+      "en": "Juninho Fabri and Dago Koutton start playing together as an acoustic duo in the mid-2000s. Two guitars, the songs they both loved and the first name of this story: Dupla 33 Espadas."
     }
   },
   {
-    "year": "2025",
+    "id": "sette-erros",
+    "period": { "pt": "Ainda nos anos 2000", "en": "Still in the 2000s" },
+    "datetime": "2004",
+    "type": "name",
+    "title": { "pt": "A dupla vira Sette Erros", "en": "The duo becomes Sette Erros" },
+    "description": {
+      "pt": "Pouco tempo depois vem a primeira troca de nome. A dupla passa a se chamar Sette Erros e segue rodando com o mesmo formato acústico.",
+      "en": "Not long after comes the first name change. The duo starts calling itself Sette Erros and keeps going with the same acoustic format."
+    }
+  },
+  {
+    "id": "pausa-2013",
+    "period": { "pt": "Até 2013", "en": "Until 2013" },
+    "datetime": "2013",
+    "type": "pause",
+    "title": { "pt": "Os dois seguem juntos até a pausa", "en": "The two keep going until the hiatus" },
+    "description": {
+      "pt": "Juninho e Dago tocam juntos por mais de uma década, até que a vida de cada um pede espaço e a dupla dá uma pausa por volta de 2013. Cada um segue a própria trajetória como músico.",
+      "en": "Juninho and Dago play together for more than a decade, until life asks for room and the duo goes on hiatus around 2013. Each one follows their own path as a musician."
+    }
+  },
+  {
+    "id": "reencontro-2025",
+    "period": { "pt": "Junho de 2025", "en": "June 2025" },
+    "datetime": "2025-06",
+    "type": "reunion",
+    "title": { "pt": "O reencontro", "en": "The reunion" },
+    "description": {
+      "pt": "Doze anos depois, Juninho e Dago se juntam de novo só para tocar. A vontade volta na hora — e volta maior do que era antes.",
+      "en": "Twelve years later, Juninho and Dago get together again just to play. The urge comes right back — and it comes back bigger than before."
+    }
+  },
+  {
+    "id": "primeiro-ensaio-trio",
+    "period": { "pt": "Julho de 2025", "en": "July 2025" },
+    "datetime": "2025-07",
     "type": "lineup",
-    "title": { "pt": "A formação atual se fecha", "en": "The current line-up comes together" },
+    "title": { "pt": "Fe Arqueman entra e vira trio", "en": "Fe Arqueman joins and it becomes a trio" },
     "description": {
-      "pt": "Dago assume o baixo e Edy a bateria. Com os quatro na mesma sala, o que era um encontro de fim de semana vira banda com nome, ensaio marcado e repertório de verdade.",
-      "en": "Dago takes over on bass and Edy on drums. With all four in the same room, a weekend get-together turns into an actual band, with a name, a rehearsal schedule and a real setlist."
+      "pt": "Fe Arqueman é convidado para tocar com a dupla e o primeiro ensaio em trio sai já com câmera ligada. É o registro mais antigo da banda que existe em vídeo.",
+      "en": "Fe Arqueman is invited to play with the duo, and the first trio rehearsal happens with the camera already rolling. It is the oldest video record of the band."
+    },
+    "video": {
+      "youtubeId": "RxewFEpE-_8",
+      "thumbnail": "ensaio-trio-2025.jpg",
+      "title": {
+        "pt": "Primeiro ensaio em trio — julho de 2025",
+        "en": "First trio rehearsal — July 2025"
+      }
     }
   },
   {
-    "year": "2025",
-    "type": "formation",
-    "title": { "pt": "O nome vem de uma placa enferrujada", "en": "The name comes from a rusty sign" },
+    "id": "quarteto-cajon",
+    "period": { "pt": "2025", "en": "2025" },
+    "datetime": "2025-08",
+    "type": "lineup",
+    "highlight": true,
+    "title": { "pt": "Edy Arqueman completa o quarteto", "en": "Edy Arqueman completes the quartet" },
     "description": {
-      "pt": "Uma placa velha e comida de ferrugem, encontrada perto do galpão do ensaio, resolve a discussão sobre o nome. Cães Enferrujados pega de primeira e ninguém mais lembra das outras opções.",
-      "en": "An old sign eaten away by rust, found near the rehearsal space, settles the argument about the name. Cães Enferrujados sticks immediately and nobody remembers the other options."
+      "pt": "Edy entra para fechar a formação atual, começando no cajon. Com quatro pessoas na mesma sala, o encontro de amigos vira banda de verdade.",
+      "en": "Edy joins to complete the current line-up, starting out on cajón. With four people in the same room, a gathering of friends turns into an actual band."
     }
   },
   {
-    "year": "2025",
-    "type": "show",
-    "title": { "pt": "Primeiro show em Curitiba", "en": "First show in Curitiba" },
+    "id": "bateria-de-mesa",
+    "period": { "pt": "2025", "en": "2025" },
+    "datetime": "2025-09",
+    "type": "rehearsal",
+    "title": { "pt": "Do cajon para a bateria de mesa", "en": "From cajón to a tabletop drum kit" },
     "description": {
-      "pt": "Estreia ao vivo em um bar da cidade, com uma hora de repertório e a casa cheia de amigos. O registro em celular vira o primeiro vídeo do canal da banda.",
-      "en": "Live debut at a bar in town, one hour of songs and a room full of friends. Someone's phone footage becomes the first video on the band's channel."
+      "pt": "O cajon dá lugar a uma bateria de mesa e o som ganha outro corpo. Pequena mudança de equipamento, diferença grande no peso das músicas.",
+      "en": "The cajón gives way to a tabletop drum kit and the sound gains another body. A small gear change, a big difference in the weight of the songs."
     }
   },
   {
-    "year": "2026",
-    "type": "release",
-    "title": { "pt": "Primeiro single: “Ferrugem”", "en": "First single: “Ferrugem”" },
+    "id": "nome-caes-enferrujados",
+    "period": { "pt": "2025", "en": "2025" },
+    "datetime": "2025-10",
+    "type": "name",
+    "highlight": true,
+    "title": { "pt": "Nasce o nome Cães Enferrujados", "en": "The name Cães Enferrujados is born" },
     "description": {
-      "pt": "A primeira música autoral, gravada ao vivo no próprio ensaio e mixada sem pressa. Sai nas plataformas com um clipe simples, filmado no galpão onde a banda ensaia.",
-      "en": "The first original song, tracked live at rehearsal and mixed without rushing. It lands on streaming with a simple video shot in the band's own rehearsal space."
+      "pt": "Já mais velhos e cada um com a própria estrada como músico, os quatro passam a revisitar músicas, jeitos de tocar, gostos e gêneros de cada um para formar essa banda de amigos antigos. Dessa enferrujada natural, depois de tantos anos, sai o nome: Cães Enferrujados.",
+      "en": "Older now, each with their own road as a musician, the four start revisiting songs, playing styles, tastes and genres from every side to build this band of old friends. Out of that natural rust, after so many years, comes the name: Cães Enferrujados."
     }
   },
   {
-    "year": "2026",
-    "type": "show",
-    "title": { "pt": "Circuito de palcos da região", "en": "Playing the local circuit" },
+    "id": "ensaios-mensais",
+    "period": { "pt": "Meses seguintes de 2025", "en": "Later months of 2025" },
+    "datetime": "2025-11",
+    "type": "rehearsal",
+    "title": { "pt": "Ensaio atrás de ensaio", "en": "One rehearsal after another" },
     "description": {
-      "pt": "A agenda passa a ter data marcada quase todo mês, entre bares, festivais de bairro e casas de show de Curitiba e cidades vizinhas.",
-      "en": "The calendar starts filling up almost every month, between bars, neighbourhood festivals and venues in Curitiba and nearby cities."
+      "pt": "A banda passa a ensaiar mês a mês, sem pressa e sem pular etapa. Cada encontro acerta um pedaço: um arranjo, uma virada, uma música nova no repertório.",
+      "en": "The band starts rehearsing month after month, without rushing and without skipping steps. Each session fixes one more piece: an arrangement, a fill, another song in the set."
+    }
+  },
+  {
+    "id": "hoje",
+    "period": { "pt": "Atualmente", "en": "Right now" },
+    "datetime": "2026",
+    "type": "today",
+    "title": { "pt": "Repertório em construção", "en": "A setlist in the making" },
+    "description": {
+      "pt": "A banda está evoluindo, levando os ensaios mais a sério e fechando o repertório. Já existem músicas autorais ainda não divulgadas; ao vivo, por enquanto, o set é feito de covers das músicas que os quatro gostam — com a mesma pegada que já virou a marca da banda.",
+      "en": "The band keeps evolving, taking rehearsals more seriously and closing in on a setlist. There are already original songs, still unreleased; live, for now, the set is built from covers of the songs the four of them love — with the same feel that has become the band's signature."
     }
   }
 ]

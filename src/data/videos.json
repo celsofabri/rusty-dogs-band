@@ -1,80 +1,79 @@
 [
   {
-    "id": "ferrugem",
-    "youtubeId": "fJ9rUzIMcZQ",
-    "thumbnail": "video-4.jpg",
-    "category": "clipes",
-    "year": 2026,
-    "duration": "4:12",
-    "title": { "pt": "Ferrugem", "en": "Ferrugem" },
+    "id": "primeiro-ensaio-trio",
+    "youtubeId": "RxewFEpE-_8",
+    "thumbnail": "ensaio-trio-2025.jpg",
+    "category": "ensaios",
+    "year": 2025,
+    "title": { "pt": "Primeiro ensaio em trio", "en": "First trio rehearsal" },
     "description": {
-      "pt": "Clipe do primeiro single autoral da banda, filmado no galpão onde saem os ensaios.",
-      "en": "Video for the band's first original single, shot in the space where the rehearsals happen."
+      "pt": "Julho de 2025: o ensaio em que Fe Arqueman se juntou a Juninho e Dago. O registro mais antigo da banda em vídeo.",
+      "en": "July 2025: the rehearsal where Fe Arqueman joined Juninho and Dago. The oldest video record of the band."
     }
   },
   {
-    "id": "estrada-de-volta",
+    "id": "set-do-ensaio",
     "youtubeId": "1w7OgIMMRc4",
     "thumbnail": "video-2.jpg",
-    "category": "clipes",
-    "year": 2026,
-    "duration": "3:38",
-    "title": { "pt": "Estrada de Volta", "en": "Estrada de Volta" },
-    "description": {
-      "pt": "Segunda faixa autoral, gravada em um único take com a banda inteira na mesma sala.",
-      "en": "The second original track, recorded in a single take with the whole band in one room."
-    }
-  },
-  {
-    "id": "ao-vivo-no-ensaio",
-    "youtubeId": "kXYiU_JCYtU",
-    "thumbnail": "video-1.jpg",
-    "category": "ao-vivo",
-    "year": 2026,
-    "duration": "42:07",
-    "title": { "pt": "Ao vivo no ensaio (sessão completa)", "en": "Live at rehearsal (full session)" },
-    "description": {
-      "pt": "Uma hora de repertório tocada do começo ao fim, sem plateia e sem retoque, do jeito que sai no ensaio de quinta.",
-      "en": "An hour of songs played start to finish, no audience and no fixes, exactly as it comes out on a Thursday rehearsal."
-    }
-  },
-  {
-    "id": "primeiro-show",
-    "youtubeId": "hTWKbfoikeg",
-    "thumbnail": "video-6.jpg",
-    "category": "ao-vivo",
+    "category": "ensaios",
     "year": 2025,
-    "duration": "8:54",
-    "title": { "pt": "Primeiro show em Curitiba", "en": "First show in Curitiba" },
+    "duration": "38:12",
+    "title": { "pt": "Set completo do ensaio", "en": "Full rehearsal set" },
     "description": {
-      "pt": "Os últimos minutos da estreia ao vivo, com a casa cheia de amigos cantando junto.",
-      "en": "The closing minutes of the live debut, with a room full of friends singing along."
+      "pt": "Uma noite de ensaio do começo ao fim, sem cortes e sem retoque, do jeito que sai na sala.",
+      "en": "A rehearsal night from start to finish, no cuts and no fixes, exactly as it comes out in the room."
     }
   },
   {
-    "id": "como-gravamos",
+    "id": "cajon-para-bateria",
     "youtubeId": "eVTXPUF4Oz4",
     "thumbnail": "video-3.jpg",
     "category": "bastidores",
-    "year": 2026,
-    "duration": "11:20",
-    "title": { "pt": "Como gravamos “Ferrugem”", "en": "How we recorded “Ferrugem”" },
+    "year": 2025,
+    "duration": "6:45",
+    "title": { "pt": "Do cajon para a bateria de mesa", "en": "From cajón to a tabletop kit" },
     "description": {
-      "pt": "Do primeiro take ao mix final: o processo caseiro por trás do primeiro single da banda.",
-      "en": "From the first take to the final mix: the homemade process behind the band's first single."
+      "pt": "A troca de equipamento que mudou o peso das músicas, contada por quem senta atrás dela.",
+      "en": "The gear change that shifted the weight of the songs, told by the person sitting behind it."
     }
   },
   {
-    "id": "ensaio-de-quinta",
+    "id": "covers-que-abrem-o-set",
+    "youtubeId": "kXYiU_JCYtU",
+    "thumbnail": "video-1.jpg",
+    "category": "covers",
+    "year": 2026,
+    "duration": "12:30",
+    "title": { "pt": "Os covers que abrem o set", "en": "The covers that open the set" },
+    "description": {
+      "pt": "As músicas que a banda escolheu para começar: rock nacional e internacional com a pegada da casa.",
+      "en": "The songs the band picked to open with: Brazilian and international rock played the house way."
+    }
+  },
+  {
+    "id": "ensaio-acustico",
+    "youtubeId": "hTWKbfoikeg",
+    "thumbnail": "video-6.jpg",
+    "category": "covers",
+    "year": 2026,
+    "duration": "9:04",
+    "title": { "pt": "Versões acústicas do repertório", "en": "Acoustic versions from the setlist" },
+    "description": {
+      "pt": "De volta ao formato que começou tudo: dois violões, baixo e a bateria bem baixinho.",
+      "en": "Back to the format that started everything: two acoustic guitars, bass and the drums kept very low."
+    }
+  },
+  {
+    "id": "como-escolhemos-o-repertorio",
     "youtubeId": "dQw4w9WgXcQ",
     "thumbnail": "video-5.jpg",
     "category": "bastidores",
-    "year": 2025,
-    "duration": "6:45",
-    "title": { "pt": "Ensaio de quinta", "en": "Thursday rehearsal" },
+    "year": 2026,
+    "duration": "7:18",
+    "title": { "pt": "Como escolhemos o repertório", "en": "How we pick the setlist" },
     "description": {
-      "pt": "Como quatro amigos de Curitiba montaram um repertório inteiro em poucos meses de garagem.",
-      "en": "How four friends from Curitiba put together a full setlist in a few months of garage rehearsals."
+      "pt": "Quatro discotecas diferentes tentando fechar uma lista só — e as músicas autorais esperando a vez.",
+      "en": "Four different record collections trying to agree on one list — with the original songs waiting their turn."
     }
   }
 ]

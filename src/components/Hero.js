@@ -37,18 +37,18 @@ const Hero = () => {
         <p className="hero__tagline">{localize(site.tagline)}</p>
 
         <div className="hero__actions">
-          <Button href={site.latestRelease.url} variant="primary" size="lg" icon={<Icon name="spotify" size={20} />}>
-            {t("home.ctaListen")}
+          <Button href={site.featured.url} variant="primary" size="lg" icon={<Icon name="youtube" size={20} />}>
+            {t("home.ctaWatch")}
           </Button>
-          <Button to="/videos/" variant="ghost" size="lg" icon={<Icon name="arrowRight" size={20} />}>
-            {t("home.ctaShows")}
+          <Button to="/sobre/" variant="ghost" size="lg" icon={<Icon name="arrowRight" size={20} />}>
+            {t("home.ctaAbout")}
           </Button>
         </div>
 
         <p className="hero__release">
-          <span className="hero__release-label">{t("home.latestRelease")}</span>
+          <span className="hero__release-label">{t("home.featured")}</span>
           <span className="hero__release-value">
-            {site.latestRelease.title} · {site.latestRelease.year}
+            {localize(site.featured.title)} · {site.featured.year}
           </span>
         </p>
       </div>
