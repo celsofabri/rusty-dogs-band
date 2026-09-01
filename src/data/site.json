@@ -24,34 +24,43 @@
   },
   "social": [
     {
-      "id": "spotify",
-      "label": "Spotify",
-      "url": "https://open.spotify.com/",
-      "handle": "Cães Enferrujados"
-    },
-    {
       "id": "youtube",
       "label": "YouTube",
-      "url": "https://www.youtube.com/",
-      "handle": "@caesenferrujados"
+      "url": "https://www.youtube.com/@RustyDogsCwb",
+      "handle": "@RustyDogsCwb"
     },
     {
       "id": "instagram",
       "label": "Instagram",
-      "url": "https://www.instagram.com/",
-      "handle": "@caesenferrujados"
+      "url": "https://www.instagram.com/oscaesenferrujados",
+      "handle": "@oscaesenferrujados"
+    },
+    {
+      "id": "spotify",
+      "label": "Spotify",
+      "url": "https://open.spotify.com/",
+      "handle": {
+        "pt": "Em breve",
+        "en": "Coming soon"
+      }
     },
     {
       "id": "applemusic",
       "label": "Apple Music",
       "url": "https://music.apple.com/",
-      "handle": "Cães Enferrujados"
+      "handle": {
+        "pt": "Em breve",
+        "en": "Coming soon"
+      }
     },
     {
       "id": "deezer",
       "label": "Deezer",
       "url": "https://www.deezer.com/",
-      "handle": "Cães Enferrujados"
+      "handle": {
+        "pt": "Em breve",
+        "en": "Coming soon"
+      }
     }
   ],
   "featured": {
