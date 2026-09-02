@@ -25,7 +25,7 @@ const BandPoster = ({ className = "" }) => {
   return (
     <StaticImage
       src="../images/hero-pt.jpg"
-      alt="Cães Enferrujados — pôster oficial da banda"
+      alt="Os Cães Enferrujados — pôster oficial da banda"
       className={classes}
       layout="constrained"
       width={900}

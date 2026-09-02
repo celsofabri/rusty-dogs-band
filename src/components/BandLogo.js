@@ -33,7 +33,7 @@ const BandLogo = ({ className = "" }) => {
   return (
     <StaticImage
       src="../images/logo-pt.png"
-      alt="Cães Enferrujados"
+      alt="Os Cães Enferrujados"
       className={classes}
       layout="constrained"
       width={640}

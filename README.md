@@ -1,6 +1,6 @@
-# Cães Enferrujados / The Rusty Dogs
+# Os Cães Enferrujados / The Rusty Dogs
 
-Site institucional bilíngue (PT/EN) da banda **Cães Enferrujados**, de Curitiba (PR), formada em 2025.
+Site institucional bilíngue (PT/EN) da banda **Os Cães Enferrujados**, de Curitiba (PR), formada em 2025.
 Feito em **Gatsby 5 + React + SCSS**.
 
 🔗 **Site publicado:** https://celsofabri.github.io/rusty-dogs-band

@@ -12,14 +12,14 @@ module.exports = {
   pathPrefix,
   siteMetadata: {
     title: `The Rusty Dogs`,
-    titleAlt: `Cães Enferrujados`,
+    titleAlt: `Os Cães Enferrujados`,
     titleTemplate: `%s | The Rusty Dogs`,
     description: `Site oficial dos Cães Enferrujados: banda de rock de Curitiba, PR, formada em 2025. Rock nacional e internacional com pegada suja e melódica.`,
-    descriptionEn: `Official website of The Rusty Dogs (Cães Enferrujados): gritty, melodic rock from Curitiba, Brazil, formed in 2025.`,
+    descriptionEn: `Official website of The Rusty Dogs: gritty, melodic rock from Curitiba, Brazil, formed in 2025.`,
     siteUrl,
     image: `/og-image.jpg`,
     lang: `pt-BR`,
-    author: `Cães Enferrujados`,
+    author: `Os Cães Enferrujados`,
   },
   flags: {
     DEV_SSR: false,
@@ -49,8 +49,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cães Enferrujados — The Rusty Dogs`,
-        short_name: `Cães Enferrujados`,
+        name: `Os Cães Enferrujados — The Rusty Dogs`,
+        short_name: `Os Cães Enferrujados`,
         start_url: `/`,
         background_color: `#0a0d12`,
         theme_color: `#e8621f`,
