@@ -14,12 +14,6 @@ import { useLanguage } from "../context/LanguageContext"
 const ContactPage = () => {
   const { t } = useLanguage()
 
-  const channels = [
-    { label: t("contact.general"), email: site.contact.general },
-    { label: t("contact.booking"), email: site.contact.booking },
-    { label: t("contact.press"), email: site.contact.press },
-  ]
-
   return (
     <Layout className="page page--contact">
       <Seo title={t("contact.title")} description={t("seo.contactDescription")} pathname="/contato/" />
@@ -43,14 +37,12 @@ const ContactPage = () => {
             <div className="info-card">
               <h2 className="info-card__title">{t("contact.infoTitle")}</h2>
               <ul className="info-card__list">
-                {channels.map(channel => (
-                  <li key={channel.email}>
-                    <span className="info-card__label">{channel.label}</span>
-                    <a className="info-card__link" href={`mailto:${channel.email}`}>
-                      {channel.email}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <span className="info-card__label">{t("contact.emailLabel")}</span>
+                  <a className="info-card__link" href={`mailto:${site.contact.email}`}>
+                    {site.contact.email}
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -58,7 +50,7 @@ const ContactPage = () => {
               <h2 className="info-card__title">{t("contact.pressKitTitle")}</h2>
               <p className="info-card__text">{t("contact.pressKitText")}</p>
               <Button
-                href={`mailto:${site.contact.press}`}
+                href={`mailto:${site.contact.email}`}
                 variant="outline"
                 icon={<Icon name="arrowRight" size={18} />}
               >

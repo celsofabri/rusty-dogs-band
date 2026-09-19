@@ -17,9 +17,7 @@ const site = {
     "en": "Juninho and Dago have been playing together since the 2000s, back when they were an acoustic duo in Curitiba. In 2025 they got back together, called Fe and Edy in, and the duo became a quartet. The set is the sum of four record collections: Engenheiros do Hawaii, Cachorro Grande and Ira! sharing space with Led Zeppelin, Ozzy Osbourne, U2, The Strokes and Kings of Leon."
   },
   "contact": {
-    "general": "contato@caesenferrujados.band",
-    "booking": "booking@caesenferrujados.band",
-    "press": "imprensa@caesenferrujados.band",
+    "email": "therustydogs@googlegroups.com",
     "phone": "+55 41 90000-0000"
   },
   "social": [

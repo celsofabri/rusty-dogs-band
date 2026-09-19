@@ -48,13 +48,7 @@ const Footer = () => {
           <h2 className="footer__title">{t("footer.contactTitle")}</h2>
           <ul className="footer__list">
             <li>
-              <a href={`mailto:${site.contact.general}`}>{site.contact.general}</a>
-            </li>
-            <li>
-              <a href={`mailto:${site.contact.booking}`}>{site.contact.booking}</a>
-            </li>
-            <li>
-              <a href={`mailto:${site.contact.press}`}>{site.contact.press}</a>
+              <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
             </li>
           </ul>
         </div>
