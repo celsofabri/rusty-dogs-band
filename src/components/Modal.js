@@ -48,18 +48,19 @@ const Modal = ({ isOpen, onClose, title, closeLabel = "Close", children }) => {
 
     lastFocused.current = document.activeElement
     const timer = window.setTimeout(() => closeRef.current?.focus(), 20)
+    document.addEventListener("keydown", handleKeyDown)
 
     return () => {
       window.clearTimeout(timer)
+      document.removeEventListener("keydown", handleKeyDown)
       if (lastFocused.current instanceof HTMLElement) lastFocused.current.focus()
     }
-  }, [isOpen])
+  }, [isOpen, handleKeyDown])
 
   if (!isOpen) return null
 
   return (
-    // eslint-disable-next-line jsx-a11y/no-static-element-interactions -- onKeyDown so implementa o focus trap (Esc/Tab) do dialog abaixo, sem semantica interativa propria.
-    <div className="modal" onKeyDown={handleKeyDown}>
+    <div className="modal">
       {/* O fundo escuro fecha o modal ao clique; o conteudo abaixo intercepta o evento. */}
       <div className="modal__backdrop" onClick={onClose} role="presentation" />
       <div
