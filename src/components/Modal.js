@@ -58,6 +58,7 @@ const Modal = ({ isOpen, onClose, title, closeLabel = "Close", children }) => {
   if (!isOpen) return null
 
   return (
+    // eslint-disable-next-line jsx-a11y/no-static-element-interactions -- onKeyDown so implementa o focus trap (Esc/Tab) do dialog abaixo, sem semantica interativa propria.
     <div className="modal" onKeyDown={handleKeyDown}>
       {/* O fundo escuro fecha o modal ao clique; o conteudo abaixo intercepta o evento. */}
       <div className="modal__backdrop" onClick={onClose} role="presentation" />

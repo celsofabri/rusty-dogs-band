@@ -1,4 +1,4 @@
-export default {
+const site = {
   "band": {
     "pt": "Os Cães Enferrujados",
     "en": "The Rusty Dogs"
@@ -77,3 +77,5 @@ export default {
     "url": "https://www.youtube.com/watch?v=RxewFEpE-_8"
   }
 }
+
+export default site
