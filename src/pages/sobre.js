@@ -8,7 +8,7 @@ import Reveal from "../components/Reveal"
 import Timeline from "../components/Timeline"
 import MembersGrid from "../components/MembersGrid"
 import timeline from "../data/timeline.json"
-import site from "../data/site.json"
+import site from "../data/site"
 import { useLanguage } from "../context/LanguageContext"
 
 const AboutPage = () => {

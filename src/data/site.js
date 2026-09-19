@@ -1,4 +1,4 @@
-{
+export default {
   "band": {
     "pt": "Os Cães Enferrujados",
     "en": "The Rusty Dogs"
@@ -34,34 +34,35 @@
       "label": "Instagram",
       "url": "https://www.instagram.com/oscaesenferrujados",
       "handle": "@oscaesenferrujados"
-    },
-    {
-      "id": "spotify",
-      "label": "Spotify",
-      "url": "https://open.spotify.com/",
-      "handle": {
-        "pt": "Em breve",
-        "en": "Coming soon"
-      }
-    },
-    {
-      "id": "applemusic",
-      "label": "Apple Music",
-      "url": "https://music.apple.com/",
-      "handle": {
-        "pt": "Em breve",
-        "en": "Coming soon"
-      }
-    },
-    {
-      "id": "deezer",
-      "label": "Deezer",
-      "url": "https://www.deezer.com/",
-      "handle": {
-        "pt": "Em breve",
-        "en": "Coming soon"
-      }
     }
+    // Plataformas de streaming removidas por enquanto (perfis ainda nao publicados).
+    // {
+    //   "id": "spotify",
+    //   "label": "Spotify",
+    //   "url": "https://open.spotify.com/",
+    //   "handle": {
+    //     "pt": "Em breve",
+    //     "en": "Coming soon"
+    //   }
+    // },
+    // {
+    //   "id": "applemusic",
+    //   "label": "Apple Music",
+    //   "url": "https://music.apple.com/",
+    //   "handle": {
+    //     "pt": "Em breve",
+    //     "en": "Coming soon"
+    //   }
+    // },
+    // {
+    //   "id": "deezer",
+    //   "label": "Deezer",
+    //   "url": "https://www.deezer.com/",
+    //   "handle": {
+    //     "pt": "Em breve",
+    //     "en": "Coming soon"
+    //   }
+    // }
   ],
   "featured": {
     "title": {

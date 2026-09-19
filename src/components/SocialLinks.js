@@ -1,7 +1,7 @@
-/** Lista de redes sociais / plataformas de streaming vinda de `src/data/site.json`. */
+/** Lista de redes sociais / plataformas de streaming vinda de `src/data/site`. */
 import React from "react"
 import Icon from "./Icon"
-import site from "../data/site.json"
+import site from "../data/site"
 import { useLanguage } from "../context/LanguageContext"
 
 const SocialLinks = ({ variant = "row", showHandle = false, className = "" }) => {

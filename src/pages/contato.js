@@ -8,7 +8,7 @@ import ContactForm from "../components/ContactForm"
 import SocialLinks from "../components/SocialLinks"
 import Button from "../components/Button"
 import Icon from "../components/Icon"
-import site from "../data/site.json"
+import site from "../data/site"
 import { useLanguage } from "../context/LanguageContext"
 
 const ContactPage = () => {

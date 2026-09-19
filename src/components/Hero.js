@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import BandLogo from "./BandLogo"
 import Button from "./Button"
 import Icon from "./Icon"
-import site from "../data/site.json"
+import site from "../data/site"
 import { useLanguage } from "../context/LanguageContext"
 
 const Hero = () => {

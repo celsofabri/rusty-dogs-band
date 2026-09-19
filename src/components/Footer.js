@@ -3,7 +3,7 @@ import React from "react"
 import { Link } from "gatsby"
 import SocialLinks from "./SocialLinks"
 import Icon from "./Icon"
-import site from "../data/site.json"
+import site from "../data/site"
 import { useLanguage } from "../context/LanguageContext"
 
 const Footer = () => {

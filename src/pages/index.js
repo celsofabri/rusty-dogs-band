@@ -10,7 +10,7 @@ import Icon from "../components/Icon"
 import VideoGrid from "../components/VideoGrid"
 import SocialLinks from "../components/SocialLinks"
 import BandPoster from "../components/BandPoster"
-import site from "../data/site.json"
+import site from "../data/site"
 import members from "../data/members.json"
 import { useLanguage } from "../context/LanguageContext"
 
