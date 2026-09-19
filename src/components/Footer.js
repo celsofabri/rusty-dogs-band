@@ -63,7 +63,6 @@ const Footer = () => {
         <p className="footer__copy">
           © {year} {localize(site.band)}. {t("footer.rights")}
         </p>
-        <p className="footer__credit">{t("footer.madeWith")}</p>
         <button type="button" className="footer__top" onClick={scrollToTop}>
           {t("footer.backToTop")}
           <Icon name="arrowUp" size={16} />

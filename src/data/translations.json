@@ -121,7 +121,6 @@
       "contactTitle": "Contato",
       "followTitle": "Siga",
       "rights": "Todos os direitos reservados.",
-      "madeWith": "Feito com Gatsby e muita distorção.",
       "backToTop": "Voltar ao topo"
     },
     "notFound": {
@@ -259,7 +258,6 @@
       "contactTitle": "Contact",
       "followTitle": "Follow",
       "rights": "All rights reserved.",
-      "madeWith": "Built with Gatsby and a lot of distortion.",
       "backToTop": "Back to top"
     },
     "notFound": {

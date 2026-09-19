@@ -43,6 +43,12 @@
     background: linear-gradient(90deg, $color-rust, transparent);
   }
 
+  // text-align nao afeta itens flex: sem isso o rotulo fica colado a
+  // esquerda mesmo dentro de uma section--center.
+  .section--center & {
+    justify-content: center;
+  }
+
   .section--center &::before {
     content: "";
     flex: 1;
