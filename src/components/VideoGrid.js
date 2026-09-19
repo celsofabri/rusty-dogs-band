@@ -12,10 +12,9 @@ import Modal from "./Modal"
 import VideoPlayer from "./VideoPlayer"
 import Reveal from "./Reveal"
 import Icon from "./Icon"
-import videos from "../data/videos.json"
 import { useLanguage } from "../context/LanguageContext"
 
-const VideoGrid = ({ items = videos, showFilters = true, limit }) => {
+const VideoGrid = ({ items, showFilters = true, limit }) => {
   const { t, localize } = useLanguage()
   const [category, setCategory] = useState("all")
   const [activeVideo, setActiveVideo] = useState(null)
@@ -35,17 +34,36 @@ const VideoGrid = ({ items = videos, showFilters = true, limit }) => {
           }
         }
       }
+      allVideo(sort: { order: ASC }) {
+        nodes {
+          id
+          youtubeId
+          thumbnail
+          category
+          year
+          duration
+          title {
+            pt
+            en
+          }
+          description {
+            pt
+            en
+          }
+        }
+      }
     }
   `)
 
+  const videos = items || data.allVideo.nodes
   const imagesByFile = Object.fromEntries(data.allFile.nodes.map(node => [node.base, node]))
 
-  const categories = useMemo(() => ["all", ...new Set(items.map(video => video.category))], [items])
+  const categories = useMemo(() => ["all", ...new Set(videos.map(video => video.category))], [videos])
 
   const visible = useMemo(() => {
-    const filtered = category === "all" ? items : items.filter(video => video.category === category)
+    const filtered = category === "all" ? videos : videos.filter(video => video.category === category)
     return limit ? filtered.slice(0, limit) : filtered
-  }, [items, category, limit])
+  }, [videos, category, limit])
 
   return (
     <div className="video-grid">
@@ -70,7 +88,8 @@ const VideoGrid = ({ items = videos, showFilters = true, limit }) => {
       ) : (
         <ul className="video-grid__list">
           {visible.map((video, index) => {
-            const image = getImage(imagesByFile[video.thumbnail]?.childImageSharp)
+            const isRemoteThumbnail = video.thumbnail.startsWith("http")
+            const image = isRemoteThumbnail ? null : getImage(imagesByFile[video.thumbnail]?.childImageSharp)
             const title = localize(video.title)
 
             return (
@@ -85,6 +104,15 @@ const VideoGrid = ({ items = videos, showFilters = true, limit }) => {
                     <span className="video-card__media">
                       {image ? (
                         <GatsbyImage image={image} alt="" role="presentation" className="video-card__image" />
+                      ) : null}
+                      {isRemoteThumbnail ? (
+                        <img
+                          src={video.thumbnail}
+                          alt=""
+                          role="presentation"
+                          loading="lazy"
+                          className="video-card__image"
+                        />
                       ) : null}
                       <span className="video-card__play" aria-hidden="true">
                         <Icon name="play" size={26} />
