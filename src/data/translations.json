@@ -114,9 +114,6 @@
       "error": "Não foi possível enviar agora. Tente de novo ou escreva direto para o nosso e-mail.",
       "infoTitle": "Outros canais",
       "emailLabel": "E-mail da banda",
-      "pressKitTitle": "Imprensa e agências",
-      "pressKitText": "Fotos em alta resolução, release atualizado, rider técnico e mapa de palco estão no nosso press kit.",
-      "pressKitCta": "Falar com a assessoria",
       "followTitle": "Siga a banda"
     },
     "footer": {
@@ -255,9 +252,6 @@
       "error": "We could not send it right now. Please try again or email us directly.",
       "infoTitle": "Other channels",
       "emailLabel": "Band email",
-      "pressKitTitle": "Press & agencies",
-      "pressKitText": "High-resolution photos, updated bio, technical rider and stage plot are all in our press kit.",
-      "pressKitCta": "Contact our press team",
       "followTitle": "Follow the band"
     },
     "footer": {

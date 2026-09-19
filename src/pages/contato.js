@@ -1,4 +1,4 @@
-/** Contato: formulario validado + canais diretos e area de imprensa. */
+/** Contato: formulario validado + canais diretos. */
 import React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
@@ -6,8 +6,6 @@ import Section from "../components/Section"
 import Reveal from "../components/Reveal"
 import ContactForm from "../components/ContactForm"
 import SocialLinks from "../components/SocialLinks"
-import Button from "../components/Button"
-import Icon from "../components/Icon"
 import site from "../data/site"
 import { useLanguage } from "../context/LanguageContext"
 
@@ -44,18 +42,6 @@ const ContactPage = () => {
                   </a>
                 </li>
               </ul>
-            </div>
-
-            <div className="info-card info-card--accent">
-              <h2 className="info-card__title">{t("contact.pressKitTitle")}</h2>
-              <p className="info-card__text">{t("contact.pressKitText")}</p>
-              <Button
-                href={`mailto:${site.contact.email}`}
-                variant="outline"
-                icon={<Icon name="arrowRight" size={18} />}
-              >
-                {t("contact.pressKitCta")}
-              </Button>
             </div>
 
             <div className="info-card">
