@@ -16,16 +16,17 @@ Feito em **Gatsby 5 + React + SCSS**.
 | Estilos | SCSS na metodologia 7-1 simplificada (`utils`, `base`, `layout`, `components`, `pages`) |
 | Imagens | `gatsby-plugin-image` + `gatsby-plugin-sharp` (AVIF/WebP, lazy loading, placeholder borrado) |
 | SEO | `gatsby-plugin-react-helmet` (title, description, Open Graph e Twitter Card por página) + sitemap |
-| Formulário | `react-hook-form` para validação + **Formspree** para o envio |
+| Formulário | `react-hook-form` para validação + **Web3Forms** para o envio |
 | Vídeos | iframe do `youtube-nocookie` criado **somente quando o modal abre** |
 | Idiomas | Contexto React próprio (`src/context/LanguageContext.js`), sem duplicar rotas |
 
-### Por que Formspree
+### Por que Web3Forms
 
-Entre Formspree, Netlify Forms e EmailJS, o **Formspree** é o mais simples para este caso:
-é um único `POST` em JSON para um endpoint, funciona em qualquer hospedagem estática
-(inclusive GitHub Pages, onde Netlify Forms não existe) e não expõe credenciais no
-front-end como o EmailJS. Veja [Formulário de contato](#formulário-de-contato).
+Entre Formspree, Web3Forms, Netlify Forms e EmailJS, o **Web3Forms** é o mais simples para
+este caso: é um único `POST` em JSON para um endpoint, funciona em qualquer hospedagem
+estática (inclusive GitHub Pages, onde Netlify Forms não existe) e entrega direto na caixa
+de e-mail associada à access key — aqui, o grupo `therustydogs@googlegroups.com`, que chega
+a todos os integrantes da banda. Veja [Formulário de contato](#formulário-de-contato).
 
 ---
 
@@ -145,11 +146,11 @@ validação e mensagens de erro em português e inglês. Há também um campo-ar
 Sem configuração, o formulário roda em **modo demonstração**: valida tudo e mostra o
 retorno de sucesso sem enviar nada. Para ativar o envio real:
 
-1. Crie um formulário em [formspree.io](https://formspree.io) e copie o ID do endpoint
-   (`https://formspree.io/f/**xxxxxxxx**`).
+1. Crie uma access key em [web3forms.com](https://web3forms.com) usando o e-mail
+   `therustydogs@googlegroups.com` (a verificação chega para o grupo).
 2. Local: copie `.env.example` para `.env.development` / `.env.production` e preencha
-   `GATSBY_FORMSPREE_ID`.
-3. No deploy: crie o secret `GATSBY_FORMSPREE_ID` em
+   `GATSBY_WEB3FORMS_ACCESS_KEY`.
+3. No deploy: crie o secret `GATSBY_WEB3FORMS_ACCESS_KEY` em
    *Settings → Secrets and variables → Actions*. O workflow já o repassa para o build.
 
 ---

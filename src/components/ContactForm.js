@@ -1,10 +1,12 @@
 /**
  * Formulario de contato com validacao client-side (react-hook-form).
  *
- * Envio: Formspree (https://formspree.io) — a opcao mais simples para um site
- * estatico, porque e so um POST em JSON para um endpoint, sem backend proprio e
- * sem depender da infra da Netlify. Basta criar um formulario la e definir
- * GATSBY_FORMSPREE_ID no `.env` / nos secrets do repositorio.
+ * Envio: Web3Forms (https://web3forms.com) — POST em JSON direto do navegador
+ * pro endpoint deles, sem backend proprio. As mensagens caem na caixa do
+ * e-mail associado a access key, que e o grupo therustydogs@googlegroups.com
+ * (chega a todos os integrantes). Basta criar a access key em web3forms.com
+ * com esse e-mail e definir GATSBY_WEB3FORMS_ACCESS_KEY no `.env` / nos
+ * secrets do repositorio.
  *
  * Sem essa variavel o formulario entra em "modo demo": valida tudo e mostra o
  * feedback de sucesso sem disparar requisicao — util em desenvolvimento.
@@ -15,7 +17,7 @@ import Button from "./Button"
 import Icon from "./Icon"
 import { useLanguage } from "../context/LanguageContext"
 
-const FORMSPREE_ID = process.env.GATSBY_FORMSPREE_ID
+const WEB3FORMS_ACCESS_KEY = process.env.GATSBY_WEB3FORMS_ACCESS_KEY
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
 const ContactForm = () => {
@@ -35,7 +37,7 @@ const ContactForm = () => {
 
     setStatus("idle")
 
-    if (!FORMSPREE_ID) {
+    if (!WEB3FORMS_ACCESS_KEY) {
       await new Promise(resolve => setTimeout(resolve, 600))
       setStatus("demo")
       reset()
@@ -43,20 +45,23 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
           name: values.name,
           email: values.email,
-          _subject: values.subject,
           subject: values.subject,
           message: values.message,
           language,
         }),
       })
 
-      if (!response.ok) throw new Error(`Formspree respondeu ${response.status}`)
+      const result = await response.json()
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || `Web3Forms respondeu ${response.status}`)
+      }
 
       setStatus("success")
       reset()

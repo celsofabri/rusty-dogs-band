@@ -54,7 +54,7 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=4096
           # Opcional: crie o secret para ativar o envio real do formulario.
-          GATSBY_FORMSPREE_ID: ${{ secrets.GATSBY_FORMSPREE_ID }}
+          GATSBY_WEB3FORMS_ACCESS_KEY: ${{ secrets.GATSBY_WEB3FORMS_ACCESS_KEY }}
 
       - name: Enviar artefato
         uses: actions/upload-pages-artifact@v3
