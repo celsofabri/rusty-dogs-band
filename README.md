@@ -3,7 +3,7 @@
 Site institucional bilíngue (PT/EN) da banda **Os Cães Enferrujados**, de Curitiba (PR), formada em 2025.
 Feito em **Gatsby 5 + React + SCSS**.
 
-🔗 **Site publicado:** https://celsofabri.github.io/rusty-dogs-band
+🔗 **Site publicado:** https://oscaesenferrujados.com.br
 
 ---
 
@@ -45,9 +45,6 @@ npm run build
 # 4. Servir o build localmente -> http://localhost:9000
 npm run serve
 
-# 5. Build igual ao do GitHub Pages (com o prefixo /rusty-dogs-band)
-npm run build:pages
-
 # Limpar cache do Gatsby (necessário se uma alteração de SCSS não aparecer)
 npm run clean
 ```
@@ -61,7 +58,8 @@ npm run clean
 ```
 rusty-dogs-band/
 ├── .github/workflows/deploy.yml   # build + deploy automático no GitHub Pages
-├── gatsby-config.js               # plugins, metadados de SEO e pathPrefix
+├── gatsby-config.js               # plugins e metadados de SEO
+├── static/CNAME                   # domínio próprio do GitHub Pages
 ├── gatsby-browser.js              # fontes, CSS global e provider de idioma
 ├── gatsby-ssr.js                  # mesmo provider na renderização estática
 ├── src/
@@ -172,11 +170,13 @@ retorno de sucesso sem enviar nada. Para ativar o envio real:
 ## Deploy
 
 O deploy é automático: todo push na `main` dispara `.github/workflows/deploy.yml`, que
-roda `npm ci`, `npm run build:pages` e publica a pasta `public/` no GitHub Pages.
+roda `npm ci`, `npm run build` e publica a pasta `public/` no GitHub Pages.
 
-Como o site é uma *project page*, ele vive em um subdiretório — por isso
-`pathPrefix: "/rusty-dogs-band"` no `gatsby-config.js` e o `--prefix-paths` no build.
-Se o repositório mudar de nome, ajuste as duas pontas.
+O site usa o domínio próprio `oscaesenferrujados.com.br`, configurado em
+*Settings → Pages → Custom domain* e no arquivo `static/CNAME` (o Gatsby copia esse
+arquivo para a raiz de `public/` em todo build — sem ele, deploys via GitHub Actions
+derrubam a configuração de domínio a cada publicação). Por viver na raiz do domínio,
+o site não precisa de `pathPrefix`.
 
 ---
 

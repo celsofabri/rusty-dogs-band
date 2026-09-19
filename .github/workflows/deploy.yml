@@ -49,8 +49,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        # --prefix-paths e obrigatorio: o site vive em /rusty-dogs-band.
-        run: npm run build:pages
+        run: npm run build
         env:
           NODE_OPTIONS: --max-old-space-size=4096
           # Opcional: crie o secret para ativar o envio real do formulario.

@@ -3,13 +3,12 @@
  * Docs: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
 
-// Publicado em https://celsofabri.github.io/rusty-dogs-band (GitHub Pages de projeto),
-// por isso o site vive em um subdiretorio e precisa de pathPrefix + `gatsby build --prefix-paths`.
-const pathPrefix = `/rusty-dogs-band`
-const siteUrl = `https://celsofabri.github.io`
+// Publicado em https://oscaesenferrujados.com.br via GitHub Pages (dominio
+// proprio configurado em static/CNAME), entao o site vive na raiz — sem
+// pathPrefix.
+const siteUrl = `https://oscaesenferrujados.com.br`
 
 module.exports = {
-  pathPrefix,
   siteMetadata: {
     title: `The Rusty Dogs`,
     titleAlt: `Os Cães Enferrujados`,
