@@ -40,10 +40,13 @@ jobs:
           path: |
             .cache
             public
-          key: ${{ runner.os }}-gatsby-${{ hashFiles('package-lock.json') }}-${{ github.sha }}
+          # Inclui os arquivos gatsby-*.js na chave: mudanças estruturais (como
+          # pathPrefix) nao invalidam corretamente o cache incremental do
+          # Gatsby por conta propria e podem deixar assets (ex.: fontes) com
+          # URLs antigas no build publicado.
+          key: ${{ runner.os }}-gatsby-${{ hashFiles('package-lock.json', 'gatsby-config.js', 'gatsby-node.js', 'gatsby-browser.js', 'gatsby-ssr.js') }}-${{ github.sha }}
           restore-keys: |
-            ${{ runner.os }}-gatsby-${{ hashFiles('package-lock.json') }}-
-            ${{ runner.os }}-gatsby-
+            ${{ runner.os }}-gatsby-${{ hashFiles('package-lock.json', 'gatsby-config.js', 'gatsby-node.js', 'gatsby-browser.js', 'gatsby-ssr.js') }}-
 
       - name: Instalar dependencias
         run: npm ci
