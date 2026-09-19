@@ -35,6 +35,10 @@ module.exports = {
         sassOptions: {
           // Silencia os avisos de depreciacao das dependencias internas do dart-sass.
           quietDeps: true,
+          // gatsby-plugin-sass ainda chama a legacy JS API do dart-sass (via
+          // sass-loader 10); silencia so esse aviso especifico ate o Gatsby
+          // migrar para a API moderna.
+          silenceDeprecations: [`legacy-js-api`],
         },
       },
     },
